@@ -1,0 +1,16 @@
+CREATE TABLE `subject` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`title` varchar(128) NOT NULL COMMENT 'Enter title',
+`description` varchar(128) DEFAULT NULL COMMENT 'Enter description',
+`classDate` varchar(128) DEFAULT NULL COMMENT 'Enter classDate',
+`startHour` varchar(128) DEFAULT NULL COMMENT 'Enter startHour',
+`duration` varchar(128) DEFAULT NULL COMMENT 'Enter duration',
+`courseId` varchar(128) DEFAULT NULL COMMENT 'Enter courseId',
+`teacherId` varchar(128) DEFAULT NULL COMMENT 'Enter teacherId',
+`isDeleted` tinyint(4) NOT NULL DEFAULT '0',
+`isApproved` tinyint(4) NOT NULL DEFAULT '0',
+  `createdBy` int(11) NOT NULL,
+  `createdDate` datetime NOT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedDate` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;

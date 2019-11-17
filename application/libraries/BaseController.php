@@ -41,11 +41,13 @@ class BaseController extends CI_Controller {
 			$this->vendorId = $this->session->userdata ( 'userId' );
 			$this->name = $this->session->userdata ( 'name' );
 			$this->roleText = $this->session->userdata ( 'roleText' );
+			$this->roleText = 'rolesdf';
 			$this->lastLogin = $this->session->userdata ( 'lastLogin' );
 			
 			$this->global ['name'] = $this->name;
-			$this->global ['role'] = $this->role;
-			$this->global ['role_text'] = $this->roleText;
+			$this->global ['userId'] = $this->vendorId;
+			$this->global ['role'] = 'helllo';
+			$this->global ['role_text'] = 'helllo another';
 			$this->global ['last_login'] = $this->lastLogin;
 		}
 	}
@@ -55,6 +57,16 @@ class BaseController extends CI_Controller {
 	 */
 	function isAdmin() {
 		if ($this->role != ROLE_ADMIN) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	/**
+	 * This function is used to check the access
+	 */
+	function isApproverAdmin() {
+		if ($this->role != ROLE_APPROVER_ADMIN) {
 			return true;
 		} else {
 			return false;
@@ -76,7 +88,7 @@ class BaseController extends CI_Controller {
 	 * This function is used to load the set of views
 	 */
 	function loadThis() {
-		$this->global ['pageTitle'] = 'CodeInsect : Access Denied';
+		$this->global ['pageTitle'] = 'Seesharp : Access Denied';
 		
 		$this->load->view ( 'includes/header', $this->global );
 		$this->load->view ( 'access' );
@@ -105,6 +117,50 @@ class BaseController extends CI_Controller {
         $this->load->view('includes/header', $headerInfo);
         $this->load->view($viewName, $pageInfo);
         $this->load->view('includes/footer', $footerInfo);
+    }
+    
+    /**
+     * This function used to load views
+     * @param {string} $viewName : This is view name
+     * @param {mixed} $headerInfo : This is array of header information
+     * @param {mixed} $pageInfo : This is array of page information
+     * @param {mixed} $footerInfo : This is array of footer information
+     * @return {null} $result : null
+     */
+    function loadForm($viewName = "", $headerInfo = NULL, $pageInfo = NULL, $footerInfo = NULL){
+        
+        //$this->load->view('includes/header', $headerInfo);
+        $this->load->view($viewName, $pageInfo);
+        //$this->load->view('includes/footer', $footerInfo);
+    }
+	/**
+     * This function used to load views
+     * @param {string} $viewName : This is view name
+     * @param {mixed} $headerInfo : This is array of header information
+     * @param {mixed} $pageInfo : This is array of page information
+     * @param {mixed} $footerInfo : This is array of footer information
+     * @return {null} $result : null
+     */
+    function loadReport($viewName = "", $headerInfo = NULL, $pageInfo = NULL, $footerInfo = NULL){
+        
+        //$this->load->view('materials2/includes/header', $headerInfo);
+        $this->load->view($viewName, $pageInfo);
+        //$this->load->view('materials2/includes/footer', $footerInfo);
+    }
+	
+		/**
+     * This function used to load views
+     * @param {string} $viewName : This is view name
+     * @param {mixed} $headerInfo : This is array of header information
+     * @param {mixed} $pageInfo : This is array of page information
+     * @param {mixed} $footerInfo : This is array of footer information
+     * @return {null} $result : null
+     */
+    function loadMaterialViews($viewName = "", $headerInfo = NULL, $pageInfo = NULL, $footerInfo = NULL){
+
+        $this->load->view('materials2/includes/header', $headerInfo);
+        $this->load->view($viewName, $pageInfo);
+        $this->load->view('materials2/includes/footer', $footerInfo);
     }
 	
 	/**

@@ -1,435 +1,537 @@
-<?php if(!defined('BASEPATH')) exit('No direct script access allowed');
+<?php
+defined('BASEPATH') or exit('No direct script access allowed');
 
 require APPPATH . '/libraries/BaseController.php';
-
 /**
- * Class : User (UserController)
- * User Class to control all user related operations.
- * @author : Kishor Mali
+ * Class : User (User Controller)
+ * User Actions
+ * @author : Arifur Rahman, http://github.com/arifcseru
  * @version : 1.1
- * @since : 15 November 2016
+ * @since : October 2019
  */
 class User extends BaseController
 {
-    /**
-     * This is default constructor of the class
-     */
-    public function __construct()
-    {
-        parent::__construct();
-        $this->load->model('user_model');
-        $this->isLoggedIn();   
-    }
-    
-    /**
-     * This function used to load the first screen of the user
-     */
-    public function index()
-    {
-        $this->global['pageTitle'] = 'CodeInsect : Dashboard';
-        
-        $this->loadViews("dashboard", $this->global, NULL , NULL);
-    }
-    
-    /**
-     * This function is used to load the user list
-     */
-    function userListing()
-    {
-        if($this->isAdmin() == TRUE)
-        {
-            $this->loadThis();
-        }
-        else
-        {        
-            $searchText = $this->security->xss_clean($this->input->post('searchText'));
-            $data['searchText'] = $searchText;
-            
-            $this->load->library('pagination');
-            
-            $count = $this->user_model->userListingCount($searchText);
 
-			$returns = $this->paginationCompress ( "userListing/", $count, 10 );
-            
-            $data['userRecords'] = $this->user_model->userListing($searchText, $returns["page"], $returns["segment"]);
-            
-            $this->global['pageTitle'] = 'CodeInsect : User Listing';
-            
-            $this->loadViews("users", $this->global, $data, NULL);
-        }
-    }
+	public function __construct()
+	{
+		parent::__construct();
+		//$this->load->library('javascript');
+		$this->load->library('form_validation');
+		$this->load->library('email');
+		$this->load->library('session');
+		$this->load->model('user_model');
+		$this->load->model('UserModel');
+		$this->load->model('UserPreferenceModel');
+		$this->load->model('RoleModel');$this->load->model('CompanyProfileModel');
+		$this->isLoggedIn();
+	}
+	public function index()
+	{
+		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
+			$this->loadThis();
+		} else {
+			//$searchText = $this->security->xss_clean($this->input->post('searchText'));
+			$data['createdByUserName'] = $this->name;
 
-    /**
-     * This function is used to load the add new form
-     */
-    function addNew()
-    {
-        if($this->isAdmin() == TRUE)
-        {
-            $this->loadThis();
-        }
-        else
-        {
-            $this->load->model('user_model');
-            $data['roles'] = $this->user_model->getUserRoles();
-            
-            $this->global['pageTitle'] = 'CodeInsect : Add New User';
+			$this->load->library('pagination');
 
-            $this->loadViews("addNew", $this->global, $data, NULL);
-        }
-    }
+			//$count = $this->user_model->userListingCount($searchText);
 
-    /**
-     * This function is used to check whether email already exist or not
-     */
-    function checkEmailExists()
-    {
-        $userId = $this->input->post("userId");
-        $email = $this->input->post("email");
+			//$returns = $this->paginationCompress ( "userListing/", $count, 10 );
 
-        if(empty($userId)){
-            $result = $this->user_model->checkEmailExists($email);
-        } else {
-            $result = $this->user_model->checkEmailExists($email, $userId);
-        }
+			$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+			if ($userPreference == null) {
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['userId'] = $this->vendorId;
+				$this->global['bodyClass'] = '';
+				$this->global['pageTitle'] = 'User Preference Needed!!!';
+				$this->global['pageName'] = 'user';
+				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+			} else {
+				$this->global['createdByUserName'] = $this->name;
+				$data['userList'] = $this->UserModel->getAll();
+				$this->global['userId'] = $this->vendorId;
+				$this->global['pageTitle'] = $userPreference->applicationTitle;
+				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->global['bodyClass'] = $userPreference->metaTags;
+				
+				$this->global['pageName'] = 'user';
+				$this->loadMaterialViews("user/index", $this->global, $data, NULL);
+			}
+		}
+	}
+	public function list()
+	{
+		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
+			$this->loadThis();
+		} else {
+			$data['createdByUserName'] = $this->name;
+			//$searchText = $this->security->xss_clean($this->input->post('searchText'));
+			//$data['searchText'] = $searchText;
 
-        if(empty($result)){ echo("true"); }
-        else { echo("false"); }
-    }
-    
-    /**
-     * This function is used to add new user to the system
-     */
-    function addNewUser()
-    {
-        if($this->isAdmin() == TRUE)
-        {
-            $this->loadThis();
-        }
-        else
-        {
-            $this->load->library('form_validation');
-            
-            $this->form_validation->set_rules('fname','Full Name','trim|required|max_length[128]');
-            $this->form_validation->set_rules('email','Email','trim|required|valid_email|max_length[128]');
-            $this->form_validation->set_rules('password','Password','required|max_length[20]');
-            $this->form_validation->set_rules('cpassword','Confirm Password','trim|required|matches[password]|max_length[20]');
-            $this->form_validation->set_rules('role','Role','trim|required|numeric');
-            $this->form_validation->set_rules('mobile','Mobile Number','required|min_length[10]');
-            
-            if($this->form_validation->run() == FALSE)
-            {
-                $this->addNew();
-            }
-            else
-            {
-                $name = ucwords(strtolower($this->security->xss_clean($this->input->post('fname'))));
-                $email = strtolower($this->security->xss_clean($this->input->post('email')));
-                $password = $this->input->post('password');
-                $roleId = $this->input->post('role');
-                $mobile = $this->security->xss_clean($this->input->post('mobile'));
-                
-                $userInfo = array('email'=>$email, 'password'=>getHashedPassword($password), 'roleId'=>$roleId, 'name'=> $name,
-                                    'mobile'=>$mobile, 'createdBy'=>$this->vendorId, 'createdDtm'=>date('Y-m-d H:i:s'));
-                
-                $this->load->model('user_model');
-                $result = $this->user_model->addNewUser($userInfo);
-                
-                if($result > 0)
-                {
-                    $this->session->set_flashdata('success', 'New User created successfully');
-                }
-                else
-                {
-                    $this->session->set_flashdata('error', 'User creation failed');
-                }
-                
-                redirect('addNew');
-            }
-        }
-    }
+			$this->load->library('pagination');
 
-    
-    /**
-     * This function is used load user edit information
-     * @param number $userId : Optional : This is user id
-     */
-    function editOld($userId = NULL)
-    {
-        if($this->isAdmin() == TRUE || $userId == 1)
-        {
-            $this->loadThis();
-        }
-        else
-        {
-            if($userId == null)
-            {
-                redirect('userListing');
-            }
-            
-            $data['roles'] = $this->user_model->getUserRoles();
-            $data['userInfo'] = $this->user_model->getUserInfo($userId);
-            
-            $this->global['pageTitle'] = 'CodeInsect : Edit User';
-            
-            $this->loadViews("editOld", $this->global, $data, NULL);
-        }
-    }
-    
-    
-    /**
-     * This function is used to edit the user information
-     */
-    function editUser()
-    {
-        if($this->isAdmin() == TRUE)
-        {
-            $this->loadThis();
-        }
-        else
-        {
-            $this->load->library('form_validation');
-            
-            $userId = $this->input->post('userId');
-            
-            $this->form_validation->set_rules('fname','Full Name','trim|required|max_length[128]');
-            $this->form_validation->set_rules('email','Email','trim|required|valid_email|max_length[128]');
-            $this->form_validation->set_rules('password','Password','matches[cpassword]|max_length[20]');
-            $this->form_validation->set_rules('cpassword','Confirm Password','matches[password]|max_length[20]');
-            $this->form_validation->set_rules('role','Role','trim|required|numeric');
-            $this->form_validation->set_rules('mobile','Mobile Number','required|min_length[10]');
-            
-            if($this->form_validation->run() == FALSE)
-            {
-                $this->editOld($userId);
-            }
-            else
-            {
-                $name = ucwords(strtolower($this->security->xss_clean($this->input->post('fname'))));
-                $email = strtolower($this->security->xss_clean($this->input->post('email')));
-                $password = $this->input->post('password');
-                $roleId = $this->input->post('role');
-                $mobile = $this->security->xss_clean($this->input->post('mobile'));
-                
-                $userInfo = array();
-                
-                if(empty($password))
-                {
-                    $userInfo = array('email'=>$email, 'roleId'=>$roleId, 'name'=>$name,
-                                    'mobile'=>$mobile, 'updatedBy'=>$this->vendorId, 'updatedDtm'=>date('Y-m-d H:i:s'));
-                }
-                else
-                {
-                    $userInfo = array('email'=>$email, 'password'=>getHashedPassword($password), 'roleId'=>$roleId,
-                        'name'=>ucwords($name), 'mobile'=>$mobile, 'updatedBy'=>$this->vendorId, 
-                        'updatedDtm'=>date('Y-m-d H:i:s'));
-                }
-                
-                $result = $this->user_model->editUser($userInfo, $userId);
-                
-                if($result == true)
-                {
-                    $this->session->set_flashdata('success', 'User updated successfully');
-                }
-                else
-                {
-                    $this->session->set_flashdata('error', 'User updation failed');
-                }
-                
-                redirect('userListing');
-            }
-        }
-    }
+			//$count = $this->user_model->userListingCount($searchText);
+
+			//$returns = $this->paginationCompress ( "userListing/", $count, 10 );
+
+			$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+			if ($userPreference == null) {
+				$this->global['userId'] = $this->vendorId;
+				$this->global['bodyClass'] = '';
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['pageTitle'] = 'User Preference Needed!!!';
+				$this->global['pageName'] = 'user';
+				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+			} else {
+				$this->global['userId'] = $this->vendorId;
+				$data['userList'] = $this->UserModel->getAll();
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['pageTitle'] = $userPreference->applicationTitle;$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->global['pageName'] = 'user';
+				$this->loadForm("user/userList", $this->global, $data, NULL);
+			}
+		}
+	}
+	public function form($id = NULL)
+	{
+
+		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
+			$this->loadThis();
+		} else {
+			$this->global['pageName'] = 'user';
+			//$data['roles'] = $this->user_model->getUserRoles();
+			$data['roles'] = $this->RoleModel->getAll();
+
+			/*$user = array(
+	            'id'=>NULL,
+	            //'field1'=>'',
+	            
+'fullName'=>'',
+
+'email'=>'',
+
+'password'=>'',
+
+'confirmPassword'=>'',
+
+'roleId'=>'',
+
+'CompanyProfile'=>'',
+
+'mobileNumber'=>'',
+
+	            'isApproved'=>0,
+	            'createdBy'=>0,
+	            'updatedBy'=>0
+	        );*/
+			if ($id != NULL) {
+				$user = array();
+				try {
+					$user = $this->UserModel->findOne($id);
+				} catch (Exception $e) {
+					echo 'error to fetch data';
+				}
+				//$user = $this->read($id);
+				$data['user'] = $user;
+
+				$data['createdByUserName'] = $this->name;
+				$data['updatedByUserName'] = $this->name;
+
+				$data['companyProfiles'] = $this->CompanyProfileModel->findBy('userId',$id);
+			} else {
+				$user = new UserModel();
+				$user->createdDate  = date('Y-m-d H:i:s');
+				$user->updatedDate  = date('Y-m-d H:i:s');
+
+				//$user->field1 = "";
+				$user->fullName = "";
+$user->email = "";
+$user->password = "";
+$user->confirmPassword = "";
+$user->roleId = "";
+$user->CompanyProfile = "";
+$user->mobileNumber = "";
+
+				$data['companyProfiles'] = $this->CompanyProfileModel->findBy('userId',$id);
+
+				$user->createdBy = $this->vendorId;
+				$user->updatedBy = $this->vendorId;
+
+				$data['createdByUserName'] = $this->name;
+				$data['updatedByUserName'] = $this->name;
+
+				$data['user'] = $user;
+			}
+			$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+			if ($userPreference == null) {
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['userId'] = $this->vendorId;
+				$this->global['bodyClass'] = '';
+				$this->global['pageTitle'] = 'User Preference Needed!!!';
+				$this->global['pageName'] = 'user';
+				
+				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+			} else {
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['userId'] = $this->vendorId;
+				$data['role'] = $this->role;
+				//$this->global['pageTitle'] = $userPreference->applicationTitle;
+				//$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				
+				$this->loadForm("user/userForm", $this->global, $data, NULL);
+			}
+		}
+	}
+	public function view($id = NULL)
+	{
+
+		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
+			$this->loadThis();
+		} else {
+			$this->global['pageTitle'] = 'Company Limited : Add New User';
+			$this->global['pageName'] = 'user';
+			$data['roles'] = $this->RoleModel->getAll();
+			$date_val = date('m/d/Y h:i:s a', time());
+			$currentDate = date_create($date_val);
+
+			/*$user = array(
+	            'id'=>NULL,
+	            //'field1'=>'',
+	            
+'fullName'=>'',
+
+'email'=>'',
+
+'password'=>'',
+
+'confirmPassword'=>'',
+
+'roleId'=>'',
+
+'CompanyProfile'=>'',
+
+'mobileNumber'=>'',
+
+	            
+	            'createdBy'=>0,
+	            'updatedBy'=>0
+	        );*/
+			if ($id != NULL) {
+				$user = array();
+				try {
+					$user = $this->UserModel->findOne($id);
+				} catch (Exception $e) {
+					echo 'error to fetch data';
+				}
+				//$user = $this->read($id);
+				$data['user'] = $user;
+				$data['companyProfiles'] = $this->CompanyProfileModel->findBy('userId',$id);
+				$data['createdByUserName'] = $this->name;
+				$data['updatedByUserName'] = $this->name;
+			} else {
+				$user = new UserModel();
+				// $user->field1 = "";
+				$data['companyProfiles'] = $this->CompanyProfileModel->findBy('userId',$id);
+				$user->fullName = "";
+$user->email = "";
+$user->password = "";
+$user->confirmPassword = "";
+$user->roleId = "";
+$user->CompanyProfile = "";
+$user->mobileNumber = "";
 
 
-    /**
-     * This function is used to delete the user using userId
-     * @return boolean $result : TRUE / FALSE
-     */
-    function deleteUser()
-    {
-        if($this->isAdmin() == TRUE)
-        {
-            echo(json_encode(array('status'=>'access')));
-        }
-        else
-        {
-            $userId = $this->input->post('userId');
-            $userInfo = array('isDeleted'=>1,'updatedBy'=>$this->vendorId, 'updatedDtm'=>date('Y-m-d H:i:s'));
-            
-            $result = $this->user_model->deleteUser($userId, $userInfo);
-            
-            if ($result > 0) { echo(json_encode(array('status'=>TRUE))); }
-            else { echo(json_encode(array('status'=>FALSE))); }
-        }
-    }
-    
-    /**
-     * Page not found : error 404
-     */
-    function pageNotFound()
-    {
-        $this->global['pageTitle'] = 'CodeInsect : 404 - Page Not Found';
-        
-        $this->loadViews("404", $this->global, NULL, NULL);
-    }
+				$data['user'] = $user;
+			}
 
-    /**
-     * This function used to show login history
-     * @param number $userId : This is user id
-     */
-    function loginHistoy($userId = NULL)
-    {
-        if($this->isAdmin() == TRUE)
-        {
-            $this->loadThis();
-        }
-        else
-        {
-            $userId = ($userId == NULL ? 0 : $userId);
+			$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+			if ($userPreference == null) {
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['bodyClass'] = '';
+				$this->global['pageTitle'] = 'User Preference Needed!!!';
+				$this->global['pageName'] = 'user';
+				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+			} else {
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['pageTitle'] = $userPreference->applicationTitle;$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->loadForm("user/userFormView", $this->global, $data, NULL);
+			}
+		}
+	}
 
-            $searchText = $this->input->post('searchText');
-            $fromDate = $this->input->post('fromDate');
-            $toDate = $this->input->post('toDate');
+	public function create()
+	{
+		$isValid = false;
+		$message = "";
+		$userList = array();
+		$limit = 10;
+		$id = NULL;
+		$data['createdByUserName'] = $this->name;
+		$user = $this->input->post();
 
-            $data["userInfo"] = $this->user_model->getUserInfoById($userId);
+		$this->load->model('UserModel');
 
-            $data['searchText'] = $searchText;
-            $data['fromDate'] = $fromDate;
-            $data['toDate'] = $toDate;
-            
-            $this->load->library('pagination');
-            
-            $count = $this->user_model->loginHistoryCount($userId, $searchText, $fromDate, $toDate);
+		try {
+			$id = $user['id'];
 
-            $returns = $this->paginationCompress ( "login-history/".$userId."/", $count, 10, 3);
 
-            $data['userRecords'] = $this->user_model->loginHistory($userId, $searchText, $fromDate, $toDate, $returns["page"], $returns["segment"]);
-            
-            $this->global['pageTitle'] = 'CodeInsect : User Login History';
-            
-            $this->loadViews("loginHistory", $this->global, $data, NULL);
-        }        
-    }
+			//print_r($user['entityDetails']);
 
-    /**
-     * This function is used to show users profile
-     */
-    function profile($active = "details")
-    {
-        $data["userInfo"] = $this->user_model->getUserInfoWithRole($this->vendorId);
-        $data["active"] = $active;
-        
-        $this->global['pageTitle'] = $active == "details" ? 'CodeInsect : My Profile' : 'CodeInsect : Change Password';
-        $this->loadViews("profile", $this->global, $data, NULL);
-    }
+			if ($id != NULL || $id != '') {
+				$user['createdBy'] = $this->vendorId;
+				$user['updatedBy'] = $this->vendorId;
 
-    /**
-     * This function is used to update the user details
-     * @param text $active : This is flag to set the active tab
-     */
-    function profileUpdate($active = "details")
-    {
-        $this->load->library('form_validation');
-            
-        $this->form_validation->set_rules('fname','Full Name','trim|required|max_length[128]');
-        $this->form_validation->set_rules('mobile','Mobile Number','required|min_length[10]');
-        $this->form_validation->set_rules('email','Email','trim|required|valid_email|max_length[128]|callback_emailExists');        
-        
-        if($this->form_validation->run() == FALSE)
-        {
-            $this->profile($active);
-        }
-        else
-        {
-            $name = ucwords(strtolower($this->security->xss_clean($this->input->post('fname'))));
-            $mobile = $this->security->xss_clean($this->input->post('mobile'));
-            $email = strtolower($this->security->xss_clean($this->input->post('email')));
-            
-            $userInfo = array('name'=>$name, 'email'=>$email, 'mobile'=>$mobile, 'updatedBy'=>$this->vendorId, 'updatedDtm'=>date('Y-m-d H:i:s'));
-            
-            $result = $this->user_model->editUser($userInfo, $this->vendorId);
-            
-            if($result == true)
-            {
-                $this->session->set_userdata('name', $name);
-                $this->session->set_flashdata('success', 'Profile updated successfully');
-            }
-            else
-            {
-                $this->session->set_flashdata('error', 'Profile updation failed');
-            }
+				$id = $this->UserModel->update($user);
+				$companyProfileList = $user['companyProfile'];
+	            $this->CompanyProfileModel->deleteBy("userId",$id);
+	            if(!empty($companyProfileList)){
+	                foreach ($companyProfileList as $key => $companyProfile) {
+						$companyProfile['createdBy'] = $this->vendorId;						$companyProfile['updatedBy'] = $this->vendorId;	                    $companyProfile['userId'] = $id;
+	                    $this->CompanyProfileModel->create($companyProfile);
+	                }
+	            }
 
-            redirect('profile/'.$active);
-        }
-    }
+			} else {
+				$user['createdBy'] = $this->vendorId;
+				$user['updatedBy'] = $this->vendorId;
 
-    /**
-     * This function is used to change the password of the user
-     * @param text $active : This is flag to set the active tab
-     */
-    function changePassword($active = "changepass")
-    {
-        $this->load->library('form_validation');
-        
-        $this->form_validation->set_rules('oldPassword','Old password','required|max_length[20]');
-        $this->form_validation->set_rules('newPassword','New password','required|max_length[20]');
-        $this->form_validation->set_rules('cNewPassword','Confirm new password','required|matches[newPassword]|max_length[20]');
-        
-        if($this->form_validation->run() == FALSE)
-        {
-            $this->profile($active);
-        }
-        else
-        {
-            $oldPassword = $this->input->post('oldPassword');
-            $newPassword = $this->input->post('newPassword');
-            
-            $resultPas = $this->user_model->matchOldPassword($this->vendorId, $oldPassword);
-            
-            if(empty($resultPas))
-            {
-                $this->session->set_flashdata('nomatch', 'Your old password is not correct');
-                redirect('profile/'.$active);
-            }
-            else
-            {
-                $usersData = array('password'=>getHashedPassword($newPassword), 'updatedBy'=>$this->vendorId,
-                                'updatedDtm'=>date('Y-m-d H:i:s'));
-                
-                $result = $this->user_model->changePassword($this->vendorId, $usersData);
-                
-                if($result > 0) { $this->session->set_flashdata('success', 'Password updation successful'); }
-                else { $this->session->set_flashdata('error', 'Password updation failed'); }
-                
-                redirect('profile/'.$active);
-            }
-        }
-    }
+				$id = $this->UserModel->create($user);
+				$companyProfileList = $user['companyProfile'];
+	            
+	            if(!empty($companyProfileList)){
+	                foreach ($companyProfileList as $key => $companyProfile) {
+						$companyProfile['createdBy'] = $this->vendorId;						$companyProfile['updatedBy'] = $this->vendorId;	                    $companyProfile['userId'] = $id;
+	                    $this->CompanyProfileModel->create($companyProfile);
+	                }
+	            }
 
-    /**
-     * This function is used to check whether email already exist or not
-     * @param {string} $email : This is users email
-     */
-    function emailExists($email)
-    {
-        $userId = $this->vendorId;
-        $return = false;
+			}
+		} catch (Exception $e) {
+			echo 'error to create data';
+		}
 
-        if(empty($userId)){
-            $result = $this->user_model->checkEmailExists($email);
-        } else {
-            $result = $this->user_model->checkEmailExists($email, $userId);
-        }
+		$this->load->library('pagination');
+		$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+		if ($userPreference == null) {
+			$this->global['userId'] = $this->vendorId;
+			$this->global['bodyClass'] = '';
+			$this->global['createdByUserName'] = $this->name;
+			$this->global['pageTitle'] = 'User Preference Needed!!!';
+			$this->global['pageName'] = 'user';
+			$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+		} else {
+			$data['userList'] = $this->UserModel->getAll();
+			$this->global['createdByUserName'] = $this->name;
+			$data['error'] = '';
+			$data['success'] = 'Successfully User Published.';
+			$data['searchText'] = '';
+			$this->global['userId'] = $this->vendorId;
+			$this->global['pageTitle'] = $userPreference->applicationTitle;
+			$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+			$this->global['pageName'] = 'user';
+			$this->global['bodyClass'] = $userPreference->metaTags;
+			$this->loadForm("user/userList", $this->global, $data, NULL);
+		}
+	}
+	public function approve($id = NULL)
+	{
+		$isValid = false;
+		$message = "";
+		$userList = array();
+		$limit = 10;
+		$this->load->model('UserModel');
+		$data['createdByUserName'] = $this->name;
+		try {
+			if ($id != NULL || $id != '') {
+				$user = $this->UserModel->findOne($id);
 
-        if(empty($result)){ $return = true; }
-        else {
-            $this->form_validation->set_message('emailExists', 'The {field} already taken');
-            $return = false;
-        }
+				if ($user != null) {
+					$user->isApproved = "1";
+					$id = $this->UserModel->approve($user);
+					
+				} else {
+					echo "not Found!";
+				}
+			}
+		} catch (Exception $e) {
+			echo 'error to update data';
+		}
 
-        return $return;
-    }
+		$this->load->library('pagination');
+		$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+		if ($userPreference == null) {
+			$this->global['userId'] = $this->vendorId;
+			$this->global['bodyClass'] = '';
+			$this->global['createdByUserName'] = $this->name;
+			$this->global['pageTitle'] = 'User Preference Needed!!!';
+			$this->global['pageName'] = 'user';
+			$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+		} else {
+			$data['userList'] = $this->UserModel->getAll();
+
+			$data['error'] = '';
+			$data['success'] = 'Successfully User Published.';
+			$data['searchText'] = '';
+			$this->global['userId'] = $this->vendorId;
+			$this->global['createdByUserName'] = $this->name;
+			$this->global['pageTitle'] = $userPreference->applicationTitle;
+			$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+			$this->global['pageName'] = 'user';
+			$this->global['bodyClass'] = $userPreference->metaTags;
+			$this->loadForm("user/userList", $this->global, $data, NULL);
+		}
+	}
+	public function read($id)
+	{
+		$this->load->model('UserModel');
+		$this->load->helper('url');
+		$user = array();
+		try {
+			$user = $this->UserModel->findOne($id);
+			header('Content-type: application/json');
+			echo json_encode($user);
+		} catch (Exception $e) {
+			echo 'error to fetch data';
+		}
+		
+		return $user;
+	}
+	public function report($id)
+	{
+		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
+			$this->loadThis();
+		} else {
+			$data['createdByUserName'] = $this->name;
+			$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+			if ($userPreference == null) {
+				$this->global['bodyClass'] = '';
+				$this->global['pageTitle'] = 'User Preference Needed!!!';
+				$this->global['pageName'] = 'user';
+				$this->global['createdByUserName'] = $this->name;
+				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+			} else {
+				//print_r($userPreference); 
+				$data['pageTitle'] = $userPreference->applicationTitle;
+				$data['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->global['createdByUserName'] = $this->name;
+				$data['pageName'] = 'userReport';
+				$data['createdByUserName'] = $this->name;
+				//$data['roles'] = $this->user_model->getUserRoles();
+				$data['roles'] = $this->RoleModel->getAll();
+
+				$user = array();
+				try {
+					$user = $this->UserModel->findOne($id);
+				} catch (Exception $e) {
+					echo 'error to fetch data';
+				}
+
+				//$user = $this->read($id);
+				$data['user'] = $user;
+				$data['companyProfiles'] = $this->CompanyProfileModel->findBy('userId',$id);
+
+				$this->loadReport("user/userReport", $this->global, $data, NULL);
+				$html = $this->output->get_output();
+				$this->load->library('pdf');
+
+				$this->dompdf->loadHtml($html);
+				$this->dompdf->setPaper('A4', 'landscape');
+				$this->dompdf->render();
+				$this->dompdf->stream("User_".$id."_report.pdf", array("Attachment" => 0));
+			}
+		}
+	}
+
+	public function get($start,$limit)
+	{
+		$this->load->model('UserModel');
+		$this->load->helper('url');
+		try {
+			$userList = $this->UserModel->getPaginated($start,$limit);
+			header('Content-type: application/json');
+			echo json_encode($userList);
+		} catch (Exception $e) {
+			echo 'error to insert data';
+		}
+
+		return $userList;
+	}
+	public function allData()
+	{
+		$data_user = array();
+		$data['createdByUserName'] = $this->name;
+		$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+		if ($userPreference == null) {
+			$this->global['bodyClass'] = '';
+			$this->global['pageTitle'] = 'User Preference Needed!!!';
+			$this->global['pageName'] = 'user';
+			$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+		} else {
+			$this->load->model('UserModel');
+			$this->global['createdByUserName'] = $this->name;
+			$data['error'] = '';
+			$data['success'] = 'Successfully User Published.';
+			$data['searchText'] = '';
+			$data['pageTitle'] = $userPreference->applicationTitle;
+			$data['activeCompanyId'] = $userPreference->activeCompanyId;
+			$data['createdByUserName'] = $this->name;
+			$data['pageName'] = 'user';
+
+			$data['userList'] = $this->UserModel->getAll();
+			$this->loadForm("user/userListReport", $this->global, $data, NULL);
+
+			$html = $this->output->get_output();
+			$this->load->library('pdf');
+
+			$this->dompdf->loadHtml($html);
+
+			$this->dompdf->setPaper('A4', 'landscape');
+			$this->dompdf->render();
+			$this->dompdf->stream("User_List_1022322.pdf", array("Attachment" => 0));
+		}
+	}
+
+	public function delete($id)
+	{
+		$data['createdByUserName'] = $this->name;
+		$userPreference = $this->UserPreferenceModel->findOneBy('userId', $this->vendorId);
+		if ($userPreference == null) {
+			$this->global['userId'] = $this->vendorId;
+			$this->global['bodyClass'] = '';
+			$this->global['pageTitle'] = 'User Preference Needed!!!';
+			$this->global['pageName'] = 'user';
+			$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
+		} else {
+			$this->load->database();
+			$this->load->model('UserModel');
+			$post = $this->input->post();
+			try {
+				$post = $this->input->post();
+				$users = array();
+
+				$users = $this->UserModel->findOne($id);
+				$this->UserModel->delete($id);
+				//$this->EntityDetailsModel->deleteBy("userId",$id);
+				$this->CompanyProfileModel->deleteBy("userId",$id);
+
+				$userList = array();
+				$limit = 10;
+				$this->load->library('pagination');
+				$data['userList'] = $this->UserModel->getAll();
+				$data['error'] = '';
+				$data['success'] = 'Successfully User Deleted.';
+				$data['searchText'] = '';
+				$this->global['userId'] = $this->vendorId;
+				$this->global['createdByUserName'] = $this->name;
+				$this->global['pageTitle'] = $userPreference->applicationTitle;
+				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->global['bodyClass'] = $userPreference->metaTags;
+
+				$this->loadForm("user/userList", $this->global, $data, NULL);
+			} catch (Exception $e) {
+				echo 'error to delete data';
+			}
+		}
+	}
 }
-
-?>

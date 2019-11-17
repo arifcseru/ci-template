@@ -116,18 +116,33 @@ class User_model extends CI_Model
      * @param number $userId : This is user id
      * @return array $result : This is user information
      */
-    function getUserInfo($userId)
-    {
+    function getUserInfo($userId){
         $this->db->select('userId, name, email, mobile, roleId');
         $this->db->from('tbl_users');
         $this->db->where('isDeleted', 0);
 		$this->db->where('roleId !=', 1);
         $this->db->where('userId', $userId);
         $query = $this->db->get();
-        
         return $query->row();
     }
     
+    /**
+     * This function used to get user information by id
+     * @param number $userId : This is user id
+     * @return array $result : This is user information
+     */
+    function getUserData($userId){
+        $this->db->where('userId', $userId);
+        $query = $this->db->get('tbl_users');
+        $this->db->close();
+        $users = $query->result();
+        $user = null;
+        if (sizeOf($users)) {
+            $user = $users[0];
+        }
+
+        return $user;
+    }
     
     /**
      * This function is used to update the user information

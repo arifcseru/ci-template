@@ -35,7 +35,22 @@ class Login extends CI_Controller
         
         if(!isset($isLoggedIn) || $isLoggedIn != TRUE)
         {
-            $this->load->view('login');
+            $this->load->view('public/login');
+        }
+        else
+        {
+            redirect('/dashboard');
+        }
+    }
+    /**
+     * This function used to new user registration
+     */
+    public function registration(){
+        $isLoggedIn = $this->session->userdata('isLoggedIn');
+        
+        if(!isset($isLoggedIn) || $isLoggedIn != TRUE)
+        {
+            $this->load->view('public/registration');
         }
         else
         {
@@ -69,19 +84,19 @@ class Login extends CI_Controller
             {
                 $lastLogin = $this->login_model->lastLoginInfo($result->userId);
 
-                $sessionArray = array('userId'=>$result->userId,                    
+                $sessionArray = array('userId'=>$result->id,                    
                                         'role'=>$result->roleId,
                                         'roleText'=>$result->role,
-                                        'name'=>$result->name,
-                                        'lastLogin'=> $lastLogin->createdDtm,
+                                        'name'=>$result->fullName,
+                                        'lastLogin'=> $lastLogin->createdDate,
                                         'isLoggedIn' => TRUE
                                 );
 
                 $this->session->set_userdata($sessionArray);
 
-                unset($sessionArray['userId'], $sessionArray['isLoggedIn'], $sessionArray['lastLogin']);
+                unset($sessionArray['id'], $sessionArray['isLoggedIn'], $sessionArray['lastLogin']);
 
-                $loginInfo = array("userId"=>$result->userId, "sessionData" => json_encode($sessionArray), "machineIp"=>$_SERVER['REMOTE_ADDR'], "userAgent"=>getBrowserAgent(), "agentString"=>$this->agent->agent_string(), "platform"=>$this->agent->platform());
+                $loginInfo = array("userId"=>$result->id, "sessionData" => json_encode($sessionArray), "machineIp"=>$_SERVER['REMOTE_ADDR'], "userAgent"=>getBrowserAgent(), "agentString"=>$this->agent->agent_string(), "platform"=>$this->agent->platform());
 
                 $this->login_model->lastLogin($loginInfo);
                 
@@ -95,12 +110,11 @@ class Login extends CI_Controller
             }
         }
     }
-
+    
     /**
      * This function used to load forgot password view
      */
-    public function forgotPassword()
-    {
+    public function forgotPassword(){
         $isLoggedIn = $this->session->userdata('isLoggedIn');
         
         if(!isset($isLoggedIn) || $isLoggedIn != TRUE)
@@ -139,7 +153,7 @@ class Login extends CI_Controller
                 $this->load->helper('string');
                 $data['email'] = $email;
                 $data['activation_id'] = random_string('alnum',15);
-                $data['createdDtm'] = date('Y-m-d H:i:s');
+                $data['createdDate'] = date('Y-m-d H:i:s');
                 $data['agent'] = getBrowserAgent();
                 $data['client_ip'] = $this->input->ip_address();
                 

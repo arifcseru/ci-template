@@ -50,15 +50,78 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
-$route['default_controller'] = "login";
+$route['default_controller'] = "home";
 $route['404_override'] = 'error_404';
 $route['translate_uri_dashes'] = FALSE;
 
 
 /*********** USER DEFINED ROUTES *******************/
+$route['companyProfile/create']['post'] = 'companyProfile/create';
+$route['jobPosting/create']['post'] = 'jobPosting/create';
+$route['employeePosition/create']['post'] = 'employeePosition/create';
+$route['entityDetails/create']['post'] = 'entityDetails/create';
+$route['role/create']['post'] = 'role/create';
+$route['leaveType/create']['post'] = 'leaveType/create';
+$route['leaveRequest/create']['post'] = 'leaveRequest/create';
+$route['attendance/create']['post'] = 'attendance/create';
+$route['jobPosition/create']['post'] = 'jobPosition/create';
+$route['applicantInfo/create']['post'] = 'applicantInfo/create';
+$route['traineeCourses/create']['post'] = 'traineeCourses/create';
+$route['interviewInfo/create']['post'] = 'interviewInfo/create';
+$route['attendanceInfo/create']['post'] = 'attendanceInfo/create';
+$route['course/create']['post'] = 'course/create';
+$route['subject/create']['post'] = 'subject/create';
+$route['trainingInfo/create']['post'] = 'trainingInfo/create';
+$route['empTraining/create']['post'] = 'empTraining/create';
+$route['trainingDetails/create']['post'] = 'trainingDetails/create';
+$route['empDocInfo/create']['post'] = 'empDocInfo/create';
+$route['userPreference/create']['post'] = 'userPreference/create';
+$route['expepnseType/create']['post'] = 'expepnseType/create';
+$route['expense/create']['post'] = 'expense/create';
+$route['incomeType/create']['post'] = 'incomeType/create';
+$route['companyBalance/create']['post'] = 'companyBalance/create';
+$route['disciplinaryCases/create']['post'] = 'disciplinaryCases/create';
+$route['holidayType/create']['post'] = 'holidayType/create';
+$route['employeeSalary/create']['post'] = 'employeeSalary/create';
+$route['providendFund/create']['post'] = 'providendFund/create';
+$route['pfDetails/create']['post'] = 'pfDetails/create';
+$route['pfLoan/create']['post'] = 'pfLoan/create';
+$route['pfLoanInstallment/create']['post'] = 'pfLoanInstallment/create';
+$route['branch/create']['post'] = 'branch/create';
+$route['department/create']['post'] = 'department/create';
+$route['jobApplication/create']['post'] = 'jobApplication/create';
+$route['publicMenu/create']['post'] = 'publicMenu/create';
+$route['features/create']['post'] = 'features/create';
+$route['characteristics/create']['post'] = 'characteristics/create';
+$route['projects/create']['post'] = 'projects/create';
+$route['pricingPlan/create']['post'] = 'pricingPlan/create';
+$route['team/create']['post'] = 'team/create';
+$route['frontPage/create']['post'] = 'frontPage/create';
+// entityAjaxRequest
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $route['loginMe'] = 'login/loginMe';
-$route['dashboard'] = 'user';
+$route['registration'] = 'login/registration';
+$route['dashboard'] = 'adminpanel';
+$route['adminpanel/user'] = 'user';
+$route['material'] = 'adminpanel';
+$route['post'] = 'post';
+$route['entityName'] = 'entityName';
 $route['logout'] = 'user/logout';
 $route['userListing'] = 'user/userListing';
 $route['userListing/(:num)'] = "user/userListing/$1";

@@ -17,8 +17,8 @@ class Login_model extends CI_Model
      */
     function loginMe($email, $password)
     {
-        $this->db->select('BaseTbl.userId, BaseTbl.password, BaseTbl.name, BaseTbl.roleId, Roles.role');
-        $this->db->from('tbl_users as BaseTbl');
+        $this->db->select('BaseTbl.id, BaseTbl.password, BaseTbl.fullName, BaseTbl.roleId, Roles.role');
+        $this->db->from('user as BaseTbl');
         $this->db->join('tbl_roles as Roles','Roles.roleId = BaseTbl.roleId');
         $this->db->where('BaseTbl.email', $email);
         $this->db->where('BaseTbl.isDeleted', 0);
@@ -44,10 +44,10 @@ class Login_model extends CI_Model
      */
     function checkEmailExist($email)
     {
-        $this->db->select('userId');
+        $this->db->select('id');
         $this->db->where('email', $email);
         $this->db->where('isDeleted', 0);
-        $query = $this->db->get('tbl_users');
+        $query = $this->db->get('user');
 
         if ($query->num_rows() > 0){
             return true;
@@ -80,8 +80,8 @@ class Login_model extends CI_Model
      */
     function getCustomerInfoByEmail($email)
     {
-        $this->db->select('userId, email, name');
-        $this->db->from('tbl_users');
+        $this->db->select('id, email, name');
+        $this->db->from('user');
         $this->db->where('isDeleted', 0);
         $this->db->where('email', $email);
         $query = $this->db->get();
@@ -109,7 +109,7 @@ class Login_model extends CI_Model
     {
         $this->db->where('email', $email);
         $this->db->where('isDeleted', 0);
-        $this->db->update('tbl_users', array('password'=>getHashedPassword($password)));
+        $this->db->update('user', array('password'=>getHashedPassword($password)));
         $this->db->delete('tbl_reset_password', array('email'=>$email));
     }
 
@@ -126,14 +126,14 @@ class Login_model extends CI_Model
 
     /**
      * This function is used to get last login info by user id
-     * @param number $userId : This is user id
+     * @param number $id : This is user id
      * @return number $result : This is query result
      */
-    function lastLoginInfo($userId)
+    function lastLoginInfo($id)
     {
         $this->db->select('BaseTbl.createdDtm');
-        $this->db->where('BaseTbl.userId', $userId);
-        $this->db->order_by('BaseTbl.id', 'DESC');
+        $this->db->where('BaseTbl.userId', $id);
+        $this->db->order_by('BaseTbl.userId', 'DESC');
         $this->db->limit(1);
         $query = $this->db->get('tbl_last_login as BaseTbl');
 

@@ -1,0 +1,15 @@
+CREATE TABLE `pf_loan` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`employeeId` varchar(128) NOT NULL COMMENT 'Enter employeeId',
+`installment` varchar(128) NOT NULL COMMENT 'Enter installment',
+`transactionDate` varchar(128) DEFAULT NULL COMMENT 'Enter transactionDate',
+`installmentFrom` varchar(128) DEFAULT NULL COMMENT 'Enter installmentFrom',
+`PfLoanInstallment` varchar(128) DEFAULT NULL COMMENT 'Enter PfLoanInstallment',
+`installmentTo` varchar(128) DEFAULT NULL COMMENT 'Enter installmentTo',
+`isDeleted` tinyint(4) NOT NULL DEFAULT '0',
+`isApproved` tinyint(4) NOT NULL DEFAULT '0',
+  `createdBy` int(11) NOT NULL,
+  `createdDate` datetime NOT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedDate` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;
