@@ -1,4 +1,22 @@
 <?php
+        // common form labels
+        $lang['content_save_label'] = 'Save';
+        $lang['content_cancel_label'] = 'Cancel';
+        $lang['content_formRequired_label'] = 'Required Field';
+
+        $lang['content_auditLogInfo_label'] = 'Audit Log Info';
+        $lang['content_createdBy_label'] = 'Created By';
+        $lang['content_createdDate_label'] = 'Created Date';
+        $lang['content_updatedBy_label'] = 'Updated By';
+        $lang['content_updatedDate_label'] = 'Updated Date';
+
+        $lang['content_specialLinks_label'] = 'Special Links';
+        $lang['content_approved_label'] = 'Approved';
+        $lang['content_approve_label'] = 'Approve';
+        $lang['content_delete_label'] = 'Delete';
+        $lang['content_addFormSubtitle_label'] = 'Add New Record';
+        $lang['content_edit_label'] = 'Edit';
+        
         // title
         
         $lang['header_title_label'] = 'HRMS Application';

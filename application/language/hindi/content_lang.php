@@ -128,14 +128,14 @@ $lang['content_traineeCourses_shortCode_label'] = " लघु कोड";
 
 $lang['content_interviewInfoList_label'] = "साक्षात्कार सूचना सूची";
 $lang['content_interviewInfoForm_label'] = " साक्षात्कार सूचना प्रपत्र";
-$lang['content_interviewInfoReportList_label'] = " साक्षात्कार सूचना रिपोर्ट सूची";
+$lang['content_interviewInfoReportList_label'] = " साक्षात्कार जानकारी रिपोर्ट सूची";
 $lang['content_interviewInfo_applicantInfoId_label'] = " आवेदक जानकारी आईडी";
 $lang['content_interviewInfo_interviewType_label'] = " साक्षात्कार प्रकार";
-$lang['content_interviewInfo_shortCode_label'] = " लघु";
-$lang['content_interviewInfo_totalMarks_label'] = " कुल कुल अंक";
-$lang['content_interviewInfo_obtainedMarks_label'] = " प्राप्त अंक";
-$lang['content_interviewInfo_description_label'] = " विवरण";
-$lang['content_interviewInfo_interviewerId_label'] = " साक्षात्कारकर्ता आईडी।Interview Info List";
+$lang['content_interviewInfo_shortCode_label'] = " लघु और कुल अंक";
+$lang['content_interviewInfo_totalMarks_label'] = " प्राप्त अंक";
+$lang['content_interviewInfo_obtainedMarks_label'] = " विवरण";
+$lang['content_interviewInfo_description_label'] = " साक्षात्कारकर्ता आईडी।Interview Info List";
+$lang['content_interviewInfo_interviewerId_label'] = "Interview Info Form";
 
 $lang['content_employeeList_label'] = "कर्मचारी सूची";
 $lang['content_employeeForm_label'] = " कर्मचारी प्रपत्र";
@@ -172,7 +172,7 @@ $lang['content_employeePositionList_label'] = "कर्मचारी स्�
 $lang['content_employeePositionForm_label'] = " कर्मचारी स्थिति प्रपत्र";
 $lang['content_employeePositionReportList_label'] = " कर्मचारी स्थिति रिपोर्ट सूची";
 $lang['content_employeePosition_employeeId_label'] = " कर्मचारी आईडी";
-$lang['content_employeePosition_jobPositionId_label'] = " नौकरी की स्थिति विवरण विवरण";
+$lang['content_employeePosition_jobPositionId_label'] = " नौकरी की स्थिति सूची विवरण";
 $lang['content_employeePosition_description_label'] = "Employee Position List";
 
 $lang['content_attendanceInfoList_label'] = "उपस्थिति जानकारी सूची";
@@ -234,10 +234,10 @@ $lang['content_empDocInfoList_label'] = "एम्प्लॉई डॉक इ�
 $lang['content_empDocInfoForm_label'] = " एम्पल डॉक इन्फोर्मेशन";
 $lang['content_empDocInfoReportList_label'] = " एम्प डॉक इन्फोर्मेशन लिस्ट";
 $lang['content_empDocInfo_employeeId_label'] = " एम्प्लॉई आईडी";
-$lang['content_empDocInfo_documentName_label'] = " डॉक्यूमेंट का नाम";
-$lang['content_empDocInfo_documentDetails_label'] = " डॉक्यूमेंट का विवरण टैग";
-$lang['content_empDocInfo_tags_label'] = " डॉक्यूमेंट";
-$lang['content_empDocInfo_document_label'] = " डॉक्यूमेंट";
+$lang['content_empDocInfo_documentName_label'] = " डॉक्यूमेंट नेम";
+$lang['content_empDocInfo_documentDetails_label'] = " डॉक्यूमेंट्स डिटेल्स डिटेल्स";
+$lang['content_empDocInfo_tags_label'] = " डॉक्यूमेंट डॉक्यूमेंट";
+$lang['content_empDocInfo_document_label'] = "Emp Doc Info List";
 
 $lang['content_leaveTypeList_label'] = "टाइप लिस्ट छोड़ो";
 $lang['content_leaveTypeForm_label'] = " टाइप टाइप छोड़ो";

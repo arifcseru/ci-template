@@ -52,6 +52,7 @@ $this->load->model('JobPostingModel');
 				$this->global['createdByUserName'] = $this->name;
 				$data['jobApplicationList'] = $this->JobApplicationModel->getAll();
 				$this->global['userId'] = $this->vendorId;
+				$data['role'] = $this->role;
 				$this->global['pageTitle'] = $userPreference->applicationTitle;
 				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
 				$this->global['bodyClass'] = $userPreference->metaTags;
@@ -86,6 +87,7 @@ $this->load->model('JobPostingModel');
 				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
 			} else {
 				$this->global['userId'] = $this->vendorId;
+				$data['role'] = $this->role;
 				$data['jobApplicationList'] = $this->JobApplicationModel->getAll();
 				$this->global['createdByUserName'] = $this->name;
 				$this->global['pageTitle'] = $userPreference->applicationTitle;$this->global['activeCompanyId'] = $userPreference->activeCompanyId;

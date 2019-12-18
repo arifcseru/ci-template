@@ -83,12 +83,15 @@ class Login extends CI_Controller
             if(!empty($result))
             {
                 $lastLogin = $this->login_model->lastLoginInfo($result->userId);
-
+                $lastLoginDate = '';
+                if ($lastLogin!=null) {
+                    $lastLoginDate = $lastLogin->createdDate;
+                }
                 $sessionArray = array('userId'=>$result->id,                    
                                         'role'=>$result->roleId,
                                         'roleText'=>$result->role,
                                         'name'=>$result->fullName,
-                                        'lastLogin'=> $lastLogin->createdDate,
+                                        'lastLogin'=> $lastLoginDate,
                                         'isLoggedIn' => TRUE
                                 );
 

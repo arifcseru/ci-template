@@ -1,0 +1,16 @@
+CREATE TABLE `team` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`memberName` varchar(128) DEFAULT NULL COMMENT 'Enter memberName',
+`designation` varchar(128) DEFAULT NULL COMMENT 'Enter designation',
+`about` varchar(128) DEFAULT NULL COMMENT 'Enter about',
+`githubLink` varchar(128) DEFAULT NULL COMMENT 'Enter githubLink',
+`twitterLink` varchar(128) DEFAULT NULL COMMENT 'Enter twitterLink',
+`facebookLink` varchar(128) DEFAULT NULL COMMENT 'Enter facebookLink',
+`frontPageId` varchar(128) DEFAULT NULL COMMENT 'Enter frontPageId',
+`isDeleted` tinyint(4) NOT NULL DEFAULT '0',
+`isApproved` tinyint(4) NOT NULL DEFAULT '0',
+  `createdBy` int(11) NOT NULL,
+  `createdDate` datetime NOT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedDate` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;

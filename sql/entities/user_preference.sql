@@ -1,0 +1,18 @@
+CREATE TABLE `user_preference` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`applicationTitle` varchar(128) DEFAULT NULL COMMENT 'Enter applicationTitle',
+`metaTags` varchar(128) DEFAULT NULL COMMENT 'Enter metaTags',
+`userId` varchar(128) DEFAULT NULL COMMENT 'Enter userId',
+`activeCompanyId` varchar(128) NOT NULL COMMENT 'Enter activeCompanyId',
+`language` varchar(128) NOT NULL COMMENT 'Enter language',
+`activeRole` varchar(128) DEFAULT NULL COMMENT 'Enter activeRole',
+`showNotification` varchar(128) DEFAULT NULL COMMENT 'Enter showNotification',
+`showEmail` varchar(128) DEFAULT NULL COMMENT 'Enter showEmail',
+`showTask` varchar(128) DEFAULT NULL COMMENT 'Enter showTask',
+`isDeleted` tinyint(4) NOT NULL DEFAULT '0',
+`isApproved` tinyint(4) NOT NULL DEFAULT '0',
+  `createdBy` int(11) NOT NULL,
+  `createdDate` datetime NOT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedDate` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;

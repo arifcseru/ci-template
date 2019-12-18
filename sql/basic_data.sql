@@ -46,6 +46,7 @@ INSERT INTO `tbl_roles` (`roleId`, `role`) VALUES
 (2, 'Manager'),
 (3, 'Employee');
 
+
 CREATE TABLE `tbl_users` (
   `userId` int(11) NOT NULL,
   `email` varchar(128) NOT NULL COMMENT 'login email',
@@ -65,6 +66,13 @@ INSERT INTO `tbl_users` (`userId`, `email`, `password`, `name`, `mobile`, `roleI
 (1, 'admin@example.com', '$2y$10$6NOKhXKiR2SAgpFF2WpCkuRgYKlSqFJaqM0NgIM3PT1gKHEM5/SM6', 'System Administrator', '9890098900', 1, 0, 0, '2015-07-01 18:56:49', 1, '2018-01-05 05:56:34'),
 (2, 'manager@example.com', '$2y$10$quODe6vkNma30rcxbAHbYuKYAZQqUaflBgc4YpV9/90ywd.5Koklm', 'Manager', '9890098900', 2, 0, 1, '2016-12-09 17:49:56', 1, '2018-01-12 07:22:11'),
 (3, 'employee@example.com', '$2y$10$UYsH1G7MkDg1cutOdgl2Q.ZbXjyX.CSjsdgQKvGzAgl60RXZxpB5u', 'Employee', '9890098900', 3, 0, 1, '2016-12-09 17:50:22', 3, '2018-01-04 07:58:28');
+
+
+
+INSERT INTO `user` (`id`, `email`, `password`,`confirmPassword`, `fullName`, `mobileNumber`, `roleId`, `CompanyProfile`, `isDeleted`, `createdBy`, `createdDate`, `updatedBy`, `updatedDate`) VALUES
+(1, 'admin@example.com', '$2y$10$6NOKhXKiR2SAgpFF2WpCkuRgYKlSqFJaqM0NgIM3PT1gKHEM5/SM6','', 'System Administrator', '9890098900', 1,1, 0, 0, '2015-07-01 18:56:49', 1, '2018-01-05 05:56:34'),
+(2, 'manager@example.com', '$2y$10$quODe6vkNma30rcxbAHbYuKYAZQqUaflBgc4YpV9/90ywd.5Koklm','', 'Manager', '9890098900', 2,1, 0, 1, '2016-12-09 17:49:56', 1, '2018-01-12 07:22:11'),
+(3, 'employee@example.com', '$2y$10$UYsH1G7MkDg1cutOdgl2Q.ZbXjyX.CSjsdgQKvGzAgl60RXZxpB5u','', 'Employee', '9890098900', 3,1, 0, 1, '2016-12-09 17:50:22', 3, '2018-01-04 07:58:28');
 
 
 ALTER TABLE `ci_sessions`
@@ -99,10 +107,7 @@ ALTER TABLE `tbl_roles`
 
 ALTER TABLE `tbl_users`
   MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+-- ///////////////////////////////////////////////////////////////////////////////////////
 
 
-INSERT INTO `user` (`id`, `email`, `password`,`confirmPassword`, `fullName`, `mobileNumber`, `roleId`, `CompanyProfile`, `isDeleted`, `createdBy`, `createdDate`, `updatedBy`, `updatedDate`) VALUES
-(1, 'admin@example.com', '$2y$10$6NOKhXKiR2SAgpFF2WpCkuRgYKlSqFJaqM0NgIM3PT1gKHEM5/SM6','', 'System Administrator', '9890098900', 1,1, 0, 0, '2015-07-01 18:56:49', 1, '2018-01-05 05:56:34'),
-(2, 'manager@example.com', '$2y$10$quODe6vkNma30rcxbAHbYuKYAZQqUaflBgc4YpV9/90ywd.5Koklm','', 'Manager', '9890098900', 2,1, 0, 1, '2016-12-09 17:49:56', 1, '2018-01-12 07:22:11'),
-(3, 'employee@example.com', '$2y$10$UYsH1G7MkDg1cutOdgl2Q.ZbXjyX.CSjsdgQKvGzAgl60RXZxpB5u','', 'Employee', '9890098900', 3,1, 0, 1, '2016-12-09 17:50:22', 3, '2018-01-04 07:58:28');
-
+-- application_table_sql

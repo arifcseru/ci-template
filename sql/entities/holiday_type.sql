@@ -1,9 +1,7 @@
-CREATE TABLE `attendance` (
+CREATE TABLE `holiday_type` (
 `id` INT NOT NULL AUTO_INCREMENT ,
-`employeeId` varchar(128) NOT NULL COMMENT 'Enter employeeId',
-`attendanceType` varchar(128) NOT NULL COMMENT 'Enter attendanceType',
-`attendanceDate` varchar(128) NOT NULL COMMENT 'Enter attendanceDate',
-`attendanceTime` varchar(128) NOT NULL COMMENT 'Enter attendanceTime',
+`name` varchar(128) NOT NULL COMMENT 'Enter name',
+`description` varchar(128) DEFAULT NULL COMMENT 'Enter description',
 `isDeleted` tinyint(4) NOT NULL DEFAULT '0',
 `isApproved` tinyint(4) NOT NULL DEFAULT '0',
   `createdBy` int(11) NOT NULL,

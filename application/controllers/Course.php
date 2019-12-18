@@ -51,6 +51,7 @@ class Course extends BaseController
 				$this->global['createdByUserName'] = $this->name;
 				$data['courseList'] = $this->CourseModel->getAll();
 				$this->global['userId'] = $this->vendorId;
+				$data['role'] = $this->role;
 				$this->global['pageTitle'] = $userPreference->applicationTitle;
 				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
 				$this->global['bodyClass'] = $userPreference->metaTags;
@@ -85,6 +86,7 @@ class Course extends BaseController
 				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
 			} else {
 				$this->global['userId'] = $this->vendorId;
+				$data['role'] = $this->role;
 				$data['courseList'] = $this->CourseModel->getAll();
 				$this->global['createdByUserName'] = $this->name;
 				$this->global['pageTitle'] = $userPreference->applicationTitle;$this->global['activeCompanyId'] = $userPreference->activeCompanyId;

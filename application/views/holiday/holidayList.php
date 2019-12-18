@@ -55,15 +55,17 @@
 
 										<td>
 											<div class="form-group">
+
+												<?php if ($role != null && $role == ROLE_APPROVER_ADMIN) {
+															if ($record->isApproved == "1") {
+																?>
+														<a class="btn btn-info btn-sm" href="#"><i class="fa fa-check-circle"></i></a>
+													<?php
+																} else {
+																	?>
+														<button class="btn btn-success btn-sm" onclick="approveHoliday(<?php echo $record->id; ?>)"><i class="fa fa-check"></i></button>
 												<?php
-														if ($record->isApproved == "1") {
-															?>
-													<a class="btn btn-info btn-sm" href="#"><i class="fa fa-check-circle"></i></a>
-												<?php
-														} else {
-															?>
-													<button class="btn btn-success btn-sm" onclick="approveHoliday(<?php echo $record->id; ?>)"><i class="fa fa-check"></i></button>
-												<?php
+															}
 														}
 														?>
 

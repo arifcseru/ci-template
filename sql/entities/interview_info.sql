@@ -1,0 +1,16 @@
+CREATE TABLE `interview_info` (
+`id` INT NOT NULL AUTO_INCREMENT ,
+`applicantInfoId` varchar(128) DEFAULT NULL COMMENT 'Enter applicantInfoId',
+`interviewType` varchar(128) NOT NULL COMMENT 'Enter interviewType',
+`shortCode` varchar(128) DEFAULT NULL COMMENT 'Enter shortCode',
+`totalMarks` varchar(128) DEFAULT NULL COMMENT 'Enter totalMarks',
+`obtainedMarks` varchar(128) DEFAULT NULL COMMENT 'Enter obtainedMarks',
+`description` varchar(128) DEFAULT NULL COMMENT 'Enter description',
+`interviewerId` varchar(128) DEFAULT NULL COMMENT 'Enter interviewerId',
+`isDeleted` tinyint(4) NOT NULL DEFAULT '0',
+`isApproved` tinyint(4) NOT NULL DEFAULT '0',
+  `createdBy` int(11) NOT NULL,
+  `createdDate` datetime NOT NULL,
+  `updatedBy` int(11) DEFAULT NULL,
+  `updatedDate` datetime DEFAULT NULL,
+PRIMARY KEY (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8;

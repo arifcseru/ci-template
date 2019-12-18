@@ -38,9 +38,9 @@ $lang['content_companyProfile_establishedDate_label'] = " Gründungsdatum";
 $lang['content_companyProfile_email_label'] = " E-Mail";
 $lang['content_companyProfile_authorName_label'] = " Autorenname";
 
-$lang['content_branchList_label'] = "Branchenliste";
-$lang['content_branchForm_label'] = " Branchenformular";
-$lang['content_branchReportList_label'] = " Branchenberichtsliste";
+$lang['content_branchList_label'] = "Zweigstellenliste";
+$lang['content_branchForm_label'] = " Zweigstellenformular";
+$lang['content_branchReportList_label'] = " Zweigstellenberichtsliste";
 $lang['content_branch_companyProfileId_label'] = " Firmenprofil-ID";
 $lang['content_branch_name_label'] = " Name";
 $lang['content_branch_address_label'] = " Adresse";
@@ -365,7 +365,7 @@ $lang['content_featuresReportList_label'] = " Funktionsberichtsliste";
 $lang['content_features_icon_label'] = " Symbol";
 $lang['content_features_title_label'] = " Titel";
 $lang['content_features_description_label'] = " Beschreibung";
-$lang['content_features_frontPageId_label'] = " ID der Startseite";
+$lang['content_features_frontPageId_label'] = " Titelseiten-ID";
 
 $lang['content_characteristicsList_label'] = "Merkmalsliste";
 $lang['content_characteristicsForm_label'] = " Merkmalsformular";

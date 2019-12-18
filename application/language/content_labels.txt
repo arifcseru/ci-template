@@ -32,16 +32,16 @@ content_userPreference_showTask_label|Show Task | User Preference List |  दि
 content_companyProfileList_label|Company Profile List | কোম্পানির প্রোফাইল তালিকা | कंपनी प्रोफाइल सूची | Liste de profil de société | Firmenprofil-Liste
 content_companyProfileForm_label|Company Profile Form |  কোম্পানির প্রোফাইল ফর্ম |  कंपनी प्रोफाइल फॉर्म |  Formulaire de profil de société |  Firmenprofil-Formular
 content_companyProfileReportList_label|Company Profile Report List |  কোম্পানির প্রোফাইল প্রতিবেদনের তালিকা |  कंपनी प्रोफाइल रिपोर्ट सूची |  Liste de rapport de profil de société |  Firmenprofil-Berichtsliste
-content_companyProfile_userId_label|User Id |  ব্যবহারকারীর আইডি |  उपयोगकर्ता आईडी |  Identifiant d'utilisateur Nom Adresse Date d'établissement Adresse électronique Nom de l'auteur |  Benutzer-ID
-content_companyProfile_name_label|Name |  নাম |  नाम | Company Profile List |  Name
-content_companyProfile_address_label|Address |  ঠিকানা |  पता | Company Profile Form |  Adresse
-content_companyProfile_establishedDate_label|Established Date |  প্রতিষ্ঠিত তারিখ |  स्थापना तिथि | Company Profile Report List |  Gründungsdatum
-content_companyProfile_email_label|Email |  ইমেল |  ईमेल | User Id |  E-Mail
-content_companyProfile_authorName_label|Author Name |  লেখকের নাম |  लेखक का नाम | Name |  Autorenname
+content_companyProfile_userId_label|User Id |  ব্যবহারকারীর আইডি |  उपयोगकर्ता आईडी |  Identifiant d'utilisateur Nom Adresse Date d'établissement |  Benutzer-ID
+content_companyProfile_name_label|Name |  নাম |  नाम |  Email |  Name
+content_companyProfile_address_label|Address |  ঠিকানা |  पता |  Nom de l'auteur |  Adresse
+content_companyProfile_establishedDate_label|Established Date |  প্রতিষ্ঠিত তারিখ |  स्थापना तिथि | Company Profile List |  Gründungsdatum
+content_companyProfile_email_label|Email |  ইমেল |  ईमेल | Company Profile Form |  E-Mail
+content_companyProfile_authorName_label|Author Name |  লেখকের নাম |  लेखक का नाम | Company Profile Report List |  Autorenname
 
-content_branchList_label|Branch List | শাখার তালিকা | शाखा सूची | Liste de succursales | Branchenliste
-content_branchForm_label|Branch Form |  শাখা ফর্ম |  शाखा प्रपत्र |  Formulaire de succursale |  Branchenformular
-content_branchReportList_label|Branch Report List |  শাখা রিপোর্ট তালিকা |  शाखा रिपोर्ट सूची |  Liste de rapports de succursale |  Branchenberichtsliste
+content_branchList_label|Branch List | শাখার তালিকা | शाखा सूची | Liste de succursales | Zweigstellenliste
+content_branchForm_label|Branch Form |  শাখা ফর্ম |  शाखा प्रपत्र |  Formulaire de succursale |  Zweigstellenformular
+content_branchReportList_label|Branch Report List |  শাখা রিপোর্ট তালিকা |  शाखा रिपोर्ट सूची |  Liste de rapports de succursale |  Zweigstellenberichtsliste
 content_branch_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  Identifiant du profil d’entreprise Nom Adresse Date d’établissement |  Firmenprofil-ID
 content_branch_name_label|Name |  নাম |  नाम | Branch List |  Name
 content_branch_address_label|Address |  ঠিকানা |  पता | Branch Form |  Adresse
@@ -50,12 +50,12 @@ content_branch_establishedDate_label|Established Date |  প্রতিষ্�
 content_departmentList_label|Department List | বিভাগের তালিকা | विभाग सूची | Liste de départements | Abteilungsliste
 content_departmentForm_label|Department Form |  বিভাগের ফর্ম |  विभाग प्रपत्र |  Formulaire de départements |  Abteilungsformular
 content_departmentReportList_label|Department Report List |  বিভাগের রিপোর্টের তালিকা |  विभाग रिपोर्ट सूची |  Liste de rapports de départements |  Abteilungsberichtsliste
-content_department_branchId_label|Branch Id |  শাখার আইডি |  शाखा आईडी |  Identifiant de la succursale |  Filial-ID
+content_department_branchId_label|Branch Id |  শাখার আইডি |  शाखा आईडी |  Identité de la succursale |  Filial-ID
 content_department_name_label|Name |  নাম |  नाम |  Nom |  Name
 content_department_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  संक्षिप्त कोड |  Code abrégé |  Funktionscode
 content_department_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
 
-content_jobPositionList_label|Job Position List | কাজের অবস্থানের তালিকা | नौकरी की स्थिति की सूची | Liste des postes à pourvoir Formulaire de poste à pourvoir Liste des rapports sur les postes à pourvoir Identifiant du service Nom du poste Code abrégé Description Actif | Job-Positionsliste
+content_jobPositionList_label|Job Position List | কাজের অবস্থানের তালিকা | नौकरी की स्थिति की सूची | Liste des postes à pourvoir Formulaire de poste à pourvoir Liste des rapports de poste à pourvoir Identifiant du service Nom du poste Code abrégé Description Actif | Job-Positionsliste
 content_jobPositionForm_label|Job Position Form |  চাকরির অবস্থানের ফর্ম |  नौकरी की स्थिति का प्रारूप | Job Position List |  Job-Positionsformular
 content_jobPositionReportList_label|Job Position Report List |  চাকরির পজিশনের রিপোর্টের তালিকা |  नौकरी की स्थिति की रिपोर्ट सूची | Job Position Form |  Job-Positionsberichtsliste
 content_jobPosition_departmentId_label|Department Id |  বিভাগের আইডি |  विभाग की आईडी | Job Position Report List |  Abteilungs-ID
@@ -66,7 +66,7 @@ content_jobPosition_isActive_label|Is Active |  সক্রিয় |  सक�
 
 content_jobPostingList_label|Job Posting List | চাকরির পোস্টিং তালিকা | जॉब पोस्टिंग लिस्ट | Liste des offres d'emploi | Stellenausschreibungsliste
 content_jobPostingForm_label|Job Posting Form |  চাকরির পোস্টিং ফর্ম |  जॉब पोस्टिंग फॉर्म |  Formulaire d'affichage des emplois |  Stellenausschreibungsformular
-content_jobPostingReportList_label|Job Posting Report List |  চাকরির পোস্টিং রিপোর্টের তালিকা |  जॉब पोस्टिंग रिपोर्ट लिस्ट |  Liste des rapports d'affichage des offres d'emploi |  Stellenausschreibungsberichtsliste
+content_jobPostingReportList_label|Job Posting Report List |  কাজের পোস্টিং রিপোর্টের তালিকা |  जॉब पोस्टिंग रिपोर्ट लिस्ट |  Liste des rapports d'affichage des offres d'emploi |  Stellenausschreibungsberichtsliste
 content_jobPosting_positionName_label|Position Name |  পদের নাম |  पोजीशन का नाम |  Nom du poste |  Positionsname
 content_jobPosting_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  शॉर्ट कोड |  Code abrégé |  Funktionscode
 content_jobPosting_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
@@ -129,18 +129,18 @@ content_traineeCourses_shortCode_label|Short Code |  শর্ট কোড |  �
 
 content_interviewInfoList_label|Interview Info List | সাক্ষাত্কার তথ্য তালিকা | साक्षात्कार सूचना सूची | Liste d'informations sur les entretiens Formulaire d'informations sur les entretiens Liste de rapports sur les entretiens Id du candidat Type d'entrevue Code abrégé Nombre total de points Points obtenus Description Id de l'intervieweurInterview Info List | Liste der Vorstellungsgesprächsinformationen
 content_interviewInfoForm_label|Interview Info Form |  সাক্ষাত্কার তথ্য ফর্ম |  साक्षात्कार सूचना प्रपत्र | Interview Info Form |  Formular für Vorstellungsgesprächsinformationen
-content_interviewInfoReportList_label|Interview Info Report List |  সাক্ষাত্কার তথ্য প্রতিবেদন তালিকা |  साक्षात्कार सूचना रिपोर्ट सूची | Interview Info Report List |  Berichtsliste für Vorstellungsgesprächsinformationen
+content_interviewInfoReportList_label|Interview Info Report List |  সাক্ষাত্কার তথ্য প্রতিবেদন তালিকা |  साक्षात्कार जानकारी रिपोर्ट सूची | Interview Info Report List |  Berichtsliste für Vorstellungsgesprächsinformationen
 content_interviewInfo_applicantInfoId_label|Applicant Info Id |  আবেদনকারীর তথ্য আইডি |  आवेदक जानकारी आईडी | Applicant Info Id |  Bewerberinformations-ID
-content_interviewInfo_interviewType_label|Interview Type |  সাক্ষাত্কারের ধরন |  साक्षात्कार प्रकार | Interview Type |  Art des Vorstellungsgesprächs
-content_interviewInfo_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  लघु | Short Code |  Funktionscode
-content_interviewInfo_totalMarks_label|Total Marks |  মোট চিহ্ন |  कुल कुल अंक | Total Marks |  Gesamtpunktzahl
-content_interviewInfo_obtainedMarks_label|Obtained Marks |  প্রাপ্ত চিহ্নসমূহ |  प्राप्त अंक | Obtained Marks |  Erhaltene Punkte
-content_interviewInfo_description_label|Description |  বর্ণনা |  विवरण | Description |  Beschreibung
-content_interviewInfo_interviewerId_label|Interviewer Id |  সাক্ষাত্কারের আইডি |  साक्षात्कारकर्ता आईडी।Interview Info List | Interviewer Id |  Interviewer-ID
+content_interviewInfo_interviewType_label|Interview Type |  সাক্ষাত্কারের ধরণ |  साक्षात्कार प्रकार | Interview Type |  Art des Vorstellungsgesprächs
+content_interviewInfo_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  लघु और कुल अंक | Short Code |  Funktionscode
+content_interviewInfo_totalMarks_label|Total Marks |  মোট চিহ্ন |  प्राप्त अंक | Total Marks |  Gesamtpunktzahl
+content_interviewInfo_obtainedMarks_label|Obtained Marks |  প্রাপ্ত নম্বর |  विवरण | Obtained Marks |  Erhaltene Punkte
+content_interviewInfo_description_label|Description |  বিবরণ |  साक्षात्कारकर्ता आईडी।Interview Info List | Description |  Beschreibung
+content_interviewInfo_interviewerId_label|Interviewer Id |  সাক্ষাত্কার আইডি | Interview Info Form | Interviewer Id |  Interviewer-ID
 
 content_employeeList_label|Employee List | কর্মচারী তালিকা | कर्मचारी सूची | Liste des employés | Mitarbeiterliste
 content_employeeForm_label|Employee Form |  কর্মচারী ফর্ম |  कर्मचारी प्रपत्र |  Formulaire d’employé |  Mitarbeiterformular
-content_employeeReportList_label|Employee Report List |  কর্মীর রিপোর্টের তালিকা |  कर्मचारी रिपोर्ट सूची |  Liste des rapports des employés |  Mitarbeiterberichtsliste
+content_employeeReportList_label|Employee Report List |  কর্মচারী রিপোর্টের তালিকা |  कर्मचारी रिपोर्ट सूची |  Liste des rapports des employés |  Mitarbeiterberichtsliste
 content_employee_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  Identifiant du profil d’entreprise |  Firmenprofil-ID
 content_employee_trainingInfo_label|Training Info |  প্রশিক্ষণের তথ্য |  प्रशिक्षण जानकारी |  Informations de formation |  Schulungsinformationen
 content_employee_empDocInfo_label|Emp Doc Info |  এমপ ডক্স ইনফো |  नियोक्ता |  Informations sur le titulaire Identifiant du candidat Prénom Nom de famille Nom du père |  Mitarbeiter-Doc-Info
@@ -173,7 +173,7 @@ content_employeePositionList_label|Employee Position List | কর্মচা�
 content_employeePositionForm_label|Employee Position Form |  কর্মী পজিশনের ফর্ম |  कर्मचारी स्थिति प्रपत्र |  Formulaire de poste des employés |  Mitarbeiterpositionsformular
 content_employeePositionReportList_label|Employee Position Report List |  কর্মী পজিশনের রিপোর্টের তালিকা |  कर्मचारी स्थिति रिपोर्ट सूची |  Liste des rapports sur les postes des employés |  Mitarbeiterpositionsberichtsliste
 content_employeePosition_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
-content_employeePosition_jobPositionId_label|Job Position Id |  চাকরির অবস্থানের আইডি |  नौकरी की स्थिति विवरण विवरण |  Identifiant du poste de travail |  Jobpositions-ID
+content_employeePosition_jobPositionId_label|Job Position Id |  চাকরির অবস্থানের আইডি |  नौकरी की स्थिति सूची विवरण |  Identifiant du poste de travail |  Jobpositions-ID
 content_employeePosition_description_label|Description |  বর্ণনা | Employee Position List |  Description |  Beschreibung
 
 content_attendanceInfoList_label|Attendance Info List | উপস্থিতি সম্পর্কিত তথ্য তালিকা | उपस्थिति जानकारी सूची | Liste d’informations sur les présences formulaire d’informations sur les présences liste de rapports sur les présences identifiant de l’employé date de présence description identifiant du superviseurAttendance Info List | Anwesenheitsinformationsliste
@@ -188,8 +188,8 @@ content_courseList_label|Course List | কোর্সের তালিকা 
 content_courseForm_label|Course Form |  কোর্স ফর্ম |  पाठ्यक्रम प्रपत्र |  Formulaire de cours |  Kursformular
 content_courseReportList_label|Course Report List |  কোর্স রিপোর্টের তালিকা |  पाठ्यक्रम रिपोर्ट सूची |  Liste des rapports de cours |  Kursberichtsliste
 content_course_subject_label|Subject |  বিষয় |  विषय |  Objet |  Betreff
-content_course_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  संक्षिप्त कोड |  Code abrégé |  Funktionscode
-content_course_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_course_shortCode_label|Short Code |  শর্ট কোড |  संक्षिप्त कोड |  Code abrégé |  Funktionscode
+content_course_description_label|Description |  বর্ণনা |  विवरण |  Description |  Beschreibung
 content_course_applicantInfoId_label|Applicant Info Id |  আবেদনকারীর তথ্য আইডি |  आवेदक सूचना आईडी |  Identifiant Info sur le candidat |  Bewerberinformations-ID
 content_course_supervisorId_label|Supervisor Id |  সুপারভাইজার আইডি |  पर्यवेक्षक आईडी |  Identifiant du superviseur |  Betreuer-ID
 
@@ -219,8 +219,8 @@ content_empTrainingReportList_label|Emp Training Report List |  এমপ ট্
 content_empTraining_courseId_label|Course Id |  কোর্স আইডি |  कोर्स आईडी |  ID du cours |  Kurs-ID
 content_empTraining_employeeId_label|Employee Id |  কর্মচারী আইডি |  एम्प्लॉई आईडी |  ID de l'employé |  Mitarbeiter-ID
 content_empTraining_title_label|Title |  শিরোনাম |  टाइटल |  Titre |  Titel
-content_empTraining_trainingDetails_label|Training Details |  প্রশিক্ষণের বিশদ |  ट्रेनिंग डिटेल्स |  Détails de la formation |  Trainingsdetails
-content_empTraining_approverId_label|Approver Id |  অনুমোদনকারী আইডি |  अप्रूवल आईडी।Emp Training List |  ID de l'approbateur |  Genehmiger-ID
+content_empTraining_trainingDetails_label|Training Details |  প্রশিক্ষণের বিবরণ |  ट्रेनिंग डिटेल्स |  Détails de la formation |  Trainingsdetails
+content_empTraining_approverId_label|Approver Id |  অনুমোদক আইডি |  अप्रूवल आईडी।Emp Training List |  ID de l'approbateur |  Genehmiger-ID
 
 content_trainingDetailsList_label|Training Details List | প্রশিক্ষণের বিশদ তালিকা | प्रशिक्षण विवरण सूची | Liste des détails de la formation | Liste der Trainingsdetails
 content_trainingDetailsForm_label|Training Details Form |  প্রশিক্ষণের বিশদ ফর্ম |  प्रशिक्षण विवरण प्रपत्र |  Formulaire des détails de la formation |  Formular für Trainingsdetails
@@ -231,14 +231,14 @@ content_trainingDetails_classDate_label|Class Date |  শ্রেণির ত�
 content_trainingDetails_isAttend_label|Is Attend |  উপস্থিতি রয়েছে |  उपस्थिति है टिप्पणीTraining Details List |  Est présent |  Wird besucht
 content_trainingDetails_remarks_label|Remarks |  মন্তব্যসমূহ | Training Details Form |  Remarques |  Bemerkungen
 
-content_empDocInfoList_label|Emp Doc Info List | এম্প ডক ইনফো লিস্ট | एम्प्लॉई डॉक इन्फोर्मेशन | Emp Doc Info List | Emp Doc-Info-Liste
+content_empDocInfoList_label|Emp Doc Info List | এম্প ডক ইনফো তালিকা | एम्प्लॉई डॉक इन्फोर्मेशन | Emp Doc Info List | Emp Doc-Info-Liste
 content_empDocInfoForm_label|Emp Doc Info Form |  এমপ ডক ইনফো ফর্ম |  एम्पल डॉक इन्फोर्मेशन |  Formulaire Info Emp Doc |  Emp Doc-Info-Formular
 content_empDocInfoReportList_label|Emp Doc Info Report List |  এমপ ডক ইনফো রিপোর্ট রিপোর্ট |  एम्प डॉक इन्फोर्मेशन लिस्ट |  Liste Emp Report Info Identifiant d'employé Nom du document Détails du document Balises |  Emp Doc-Info-Berichtsliste
 content_empDocInfo_employeeId_label|Employee Id |  কর্মচারী আইডি |  एम्प्लॉई आईडी |  Document |  Mitarbeiter-ID
-content_empDocInfo_documentName_label|Document Name |  ডকুমেন্টের নাম |  डॉक्यूमेंट का नाम | Emp Doc Info List |  Dokumentname
-content_empDocInfo_documentDetails_label|Document Details |  ডকুমেন্টের বিবরণ |  डॉक्यूमेंट का विवरण टैग | Emp Doc Info Form |  Dokumentdetails
-content_empDocInfo_tags_label|Tags |  ট্যাগস |  डॉक्यूमेंट | Emp Doc Info Report List |  Tags
-content_empDocInfo_document_label|Document |  ডকুমেন্ট |  डॉक्यूमेंट | Employee Id |  Dokument
+content_empDocInfo_documentName_label|Document Name |  নথির নাম |  डॉक्यूमेंट नेम | Emp Doc Info List |  Dokumentname
+content_empDocInfo_documentDetails_label|Document Details |  নথির বিশদ |  डॉक्यूमेंट्स डिटेल्स डिटेल्स | Emp Doc Info Form |  Dokumentdetails
+content_empDocInfo_tags_label|Tags |  ট্যাগ |  डॉक्यूमेंट डॉक्यूमेंट | Emp Doc Info Report List |  Tags
+content_empDocInfo_document_label|Document |  দস্তাবেজ | Emp Doc Info List | Employee Id |  Dokument
 
 content_leaveTypeList_label|Leave Type List | প্রকারের তালিকা ছেড়ে দিন | टाइप लिस्ट छोड़ो | Liste des types de congés | Typliste verlassen
 content_leaveTypeForm_label|Leave Type Form |  প্রকার ত্যাগের ফর্ম |  टाइप टाइप छोड़ो |  Formulaire de type de congés |  Typformular verlassen
@@ -260,9 +260,9 @@ content_holidayTypeReportList_label|Holiday Type Report List |  ছুটির 
 content_holidayType_name_label|Name |  নাম |  नाम |  Nom |  Name
 content_holidayType_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
 
-content_holidayList_label|Holiday List | ছুটির তালিকা | हॉलिडे लिस्ट | Liste de jours fériés | Feiertagsliste
+content_holidayList_label|Holiday List | ছুটির তালিকা | हॉलिडे लिस्ट | Liste des jours fériés | Feiertagsliste
 content_holidayForm_label|Holiday Form |  হলিডে ফর্ম |  हॉलीडे फॉर्म |  Formulaire de vacances |  Feiertagsformular
-content_holidayReportList_label|Holiday Report List |  হলিডে রিপোর্টের তালিকা |  हॉलीडे रिपोर्ट लिस्ट |  Liste de rapports de jours fériés |  Feiertagsberichtsliste
+content_holidayReportList_label|Holiday Report List |  হলিডে রিপোর্টের তালিকা |  हॉलीडे रिपोर्ट लिस्ट |  Liste des rapports de jours fériés |  Feiertagsberichtsliste
 content_holiday_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
 content_holiday_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
 content_holiday_holidayTypeId_label|Holiday Type Id |  ছুটির ধরণের আইডি |  हॉलिडे टाइप आईडी |  Identifiant du type de jour férié.Holiday List |  Feiertagsart-ID
@@ -299,17 +299,17 @@ content_income_transactionDate_label|Transaction Date |  লেনদেনে�
 
 content_companyBalanceList_label|Company Balance List | কোম্পানির ব্যালেন্সের তালিকা | कंपनी शेष सूची | Liste des soldes de la société | Firmenbilanzliste
 content_companyBalanceForm_label|Company Balance Form |  কোম্পানির ব্যালেন্স ফর্ম |  कंपनी शेष फार्म |  Formulaire de bilan de la société |  Firmenbilanzformular
-content_companyBalanceReportList_label|Company Balance Report List |  কোম্পানির ব্যালেন্স রিপোর্টের তালিকা |  कंपनी शेष रिपोर्ट सूची |  Liste de rapports sur le solde de la société |  Firmenbilanzberichtsliste
-content_companyBalance_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  ID de profil de la société |  Firmenprofil-ID
+content_companyBalanceReportList_label|Company Balance Report List |  কোম্পানির ব্যালেন্স রিপোর্টের তালিকা |  कंपनी शेष रिपोर्ट सूची |  Liste du rapport de la société |  Firmenbilanzberichtsliste
+content_companyBalance_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  ID du profil de la société |  Firmenprofil-ID
 content_companyBalance_initialBalance_label|Initial Balance |  প্রাথমিক ব্যালেন্স |  प्रारंभिक शेष |  Solde initial |  Anfangssaldo
 content_companyBalance_currentBalance_label|Current Balance |  বর্তমান ব্যালেন্স |  वर्तमान शेष राशि |  Solde actuel |  Aktueller Saldo
 
-content_disciplinaryCasesList_label|Disciplinary Cases List | ডিসিপ্লিনারি কেস তালিকা | अनुशासनात्मक मामलों की सूची | Liste des affaires disciplinaires | Liste der Disziplinarfälle
-content_disciplinaryCasesForm_label|Disciplinary Cases Form |  ডিসিপ্লিনারি কেস ফর্ম |  अनुशासनात्मक मामलों की रिपोर्ट |  Formulaire des affaires disciplinaires |  Formular für Disziplinarfälle
-content_disciplinaryCasesReportList_label|Disciplinary Cases Report List |  ডিসিপ্লিনারি কেস রিপোর্টের লিস্ট |  अनुशासनात्मक मामलों की रिपोर्ट सूची |  Liste du rapport des affaires disciplinaires |  Liste der Disziplinarfälle
-content_disciplinaryCases_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
-content_disciplinaryCases_caseName_label|Case Name |  কেসের নাম |  केस का नाम |  Nom de l'affaire |  Name des Falls
-content_disciplinaryCases_description_label|Description |  বর্ণনা |  विवरण |  Description |  Beschreibung
+content_disciplinaryCasesList_label|Disciplinary Cases List | ডিসিপ্লিনারি কেস তালিকা | अनुशासनात्मक मामलों की सूची | Liste des affaires disciplinaires Formulaire des affaires disciplinaires Liste du rapport des affaires disciplinaires Identifiant de l'employé Nom de l'affaire Description | Liste der Disziplinarfälle
+content_disciplinaryCasesForm_label|Disciplinary Cases Form |  ডিসিপ্লিনারি কেস ফর্ম |  अनुशासनात्मक मामलों की रिपोर्ट | Disciplinary Cases List |  Formular für Disziplinarfälle
+content_disciplinaryCasesReportList_label|Disciplinary Cases Report List |  ডিসিপ্লিনারি কেস রিপোর্ট রিপোর্ট |  अनुशासनात्मक मामलों की रिपोर्ट सूची | Disciplinary Cases Form |  Liste der Disziplinarfälle
+content_disciplinaryCases_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी | Disciplinary Cases Report List |  Mitarbeiter-ID
+content_disciplinaryCases_caseName_label|Case Name |  কেসের নাম |  केस का नाम | Employee Id |  Name des Falls
+content_disciplinaryCases_description_label|Description |  বর্ণনা |  विवरण | Case Name |  Beschreibung
 
 content_employeeSalaryList_label|Employee Salary List | কর্মচারীদের বেতন তালিকা | कर्मचारी वेतन सूची | Liste des salaires des employés Formulaire de salaire des employés Liste du rapport des salaires des employés Identifiant de l'employé Montant Pourcentage d'impôt | Liste der Mitarbeitergehälter
 content_employeeSalaryForm_label|Employee Salary Form |  কর্মচারীদের বেতন ফর্ম |  कर्मचारी वेतन फॉर्म | Employee Salary List |  Formular für Mitarbeitergehälter
@@ -366,7 +366,7 @@ content_featuresReportList_label|Features Report List |  বৈশিষ্ট�
 content_features_icon_label|Icon |  আইকন |  चिह्न |  Icône |  Symbol
 content_features_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
 content_features_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
-content_features_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠার আইডি |  सामने पृष्ठ आईडी |  Identifiant de la page d'accueil |  ID der Startseite
+content_features_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠার আইডি |  सामने पृष्ठ आईडी |  Identifiant de la page d'accueil |  Titelseiten-ID
 
 content_characteristicsList_label|Characteristics List | বৈশিষ্ট্য তালিকা | अभिलक्षण सूची | Liste de caractéristiques | Merkmalsliste
 content_characteristicsForm_label|Characteristics Form |  বৈশিষ্ট্য ফর্ম |  अभिलक्षण रूप |  Formulaire de caractéristiques |  Merkmalsformular
