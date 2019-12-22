@@ -160,7 +160,11 @@ class BaseController extends CI_Controller {
 
         $this->load->view('materials2/includes/header', $headerInfo);
         $this->load->view($viewName, $pageInfo);
-        $this->load->view('materials2/includes/footer', $footerInfo);
+		$this->load->view('materials2/includes/footer', $footerInfo);
+		
+		// $this->load->view('includes/header', $headerInfo);
+        // $this->load->view($viewName, $pageInfo);
+        // $this->load->view('includes/footer', $footerInfo);
     }
 	
 	/**

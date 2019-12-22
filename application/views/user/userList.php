@@ -74,7 +74,10 @@
 												<button class="btn btn-info btn-sm" onclick="loadUserFormUIToView(<?php echo $record->id; ?>)"><i class="fa fa-eye"></i></button>
 												<button class="btn btn-warning btn-sm" onclick="loadUserFormUIToEdit(<?php echo $record->id; ?>)"><i class="fa fa-pencil"></i></button>
 												<a target="__BLANK" class="btn btn-warning btn-sm" href="<?php echo base_url(); ?>user/report/<?php echo $record->id; ?>"><i class="fa fa-print"></i></a>
-												<button class="btn btn-danger btn-sm" onclick="deleteUser(<?php echo $record->id; ?>)"><i class="fa fa-trash"></i></button>
+												<?php if ($record->isApproved == "1") {
+															?>
+													<button class="btn btn-danger btn-sm" onclick="deleteUser(<?php echo $record->id; ?>)"><i class="fa fa-trash"></i></button>
+												<?php } ?>
 											</div>
 
 										</td>

@@ -36,7 +36,7 @@
   <meta property="og:site_name" content="Creative Tim" />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" /> -->
 
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
@@ -51,6 +51,8 @@
   <link href="<?php echo base_url(); ?>assets/css/material-dashboard.min.css?v=2.1.1" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="<?php echo base_url(); ?>assets/demo/demo.css" rel="stylesheet" />
+  <link href="<?php echo base_url(); ?>assets/css/font-awesome.css" rel="stylesheet" />
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" type="text/css" /> -->
   <!-- Google Tag Manager -->
   <script>
     var baseHref = "<?php echo base_url(); ?>";
@@ -102,13 +104,13 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
         
-          <li class="nav-item <?php $printActive = $pageName == 'dashboard'? "active" : "" ; echo $printActive; ?> ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>dashboard">
               <i class="material-icons">dashboard</i>
               <p><?php echo $this->lang->line('menu_dashboard_label'); ?></p>
             </a>
           </li>
-          <li class="nav-item <?php $printActive = $pageName == 'user'? "active" : "" ; echo $printActive; ?> ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>user">
               <i class="material-icons">person</i>
               <p><?php echo $this->lang->line('menu_userProfile_label'); ?></p>
@@ -124,7 +126,7 @@
             
             <div class="collapse" id="recruitment" style="">
               <ul class="nav">
-                <li class="nav-item <?php $printActive = $pageName == 'jobPosting'? "active" : "" ; echo $printActive; ?> ">
+                <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>jobPosting">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_jobPosting_label'); ?></p>
@@ -132,14 +134,14 @@
                   </li>
                   
                   
-                  <li class="nav-item <?php $printActive = $pageName == 'applicantInfo'? "active" : "" ; echo $printActive; ?> ">
+                  <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>applicantInfo">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_applicantInfo_label'); ?></p>
                     </a>
                   </li>
                   
-                  <li class="nav-item <?php $printActive = $pageName == 'interviewInfo'? "active" : "" ; echo $printActive; ?> ">
+                  <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>interviewInfo">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_interviewInfo_label'); ?></p>
@@ -157,7 +159,7 @@
             </div>
           </li>
           
-          <li class="nav-item <?php $printActive = $pageName == 'employee'? "active" : "" ; echo $printActive; ?> ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>employee">
               <i class="material-icons">content_paste</i>
               <p><?php echo $this->lang->line('menu_employee_label'); ?></p>
@@ -175,28 +177,28 @@
             <div class="collapse" id="hrms" style="">
               <ul class="nav">
               
-                <li class="nav-item <?php $printActive = $pageName == 'employeePosition'? "active" : "" ; echo $printActive; ?> ">
+                <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>employeePosition">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_employeePosition_label'); ?></p>
                     </a>
                   </li>
                   
-                <li class="nav-item <?php $printActive = $pageName == 'holiday'? "active" : "" ; echo $printActive; ?> ">
+                <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>holiday">
               <i class="material-icons">content_paste</i>
               <p><?php echo $this->lang->line('menu_holiday_label'); ?></p>
             </a>
           </li>
           
-          <li class="nav-item <?php $printActive = $pageName == 'attendanceInfo'? "active" : "" ; echo $printActive; ?> ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>attendanceInfo">
               <i class="material-icons">content_paste</i>
               <p><?php echo $this->lang->line('menu_attendanceInfo_label'); ?></p>
             </a>
           </li>
           
-          <li class="nav-item <?php $printActive = $pageName == 'leaveRequest'? "active" : "" ; echo $printActive; ?> ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>leaveRequest">
               <i class="material-icons">content_paste</i>
               <p><?php echo $this->lang->line('menu_leaveRequest_label'); ?></p>
@@ -216,14 +218,14 @@
             </a>
             <div class="collapse" id="employeeFacility" style="">
               <ul class="nav">
-                  <li class="nav-item <?php $printActive = $pageName == 'employeeSalary'? "active" : "" ; echo $printActive; ?> ">
-                    <a class="nav-link" href="<?php echo base_url(); ?>employeesalary">
+                  <li class="nav-item">
+                    <a class="nav-link" href="<?php echo base_url(); ?>employeeSalary">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_employeeSalary_label'); ?></p>
                     </a>
                   </li>
                   
-                  <li class="nav-item <?php $printActive = $pageName == 'providendFund'? "active" : "" ; echo $printActive; ?> ">
+                  <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>providendFund">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_providendFund_label'); ?></p>
@@ -242,21 +244,21 @@
             </a>
             <div class="collapse" id="publicity" style="">
               <ul class="nav">
-                <li class="nav-item <?php $printActive = $pageName == 'notifications'? "active" : "" ; echo $printActive; ?> ">
+                <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>notifications">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_notifications_label'); ?></p>
                     </a>
                   </li>
                   
-                  <li class="nav-item <?php $printActive = $pageName == 'latestNews'? "active" : "" ; echo $printActive; ?> ">
+                  <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>latestNews">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_latestNews_label'); ?></p>
                     </a>
                   </li>
                   
-                  <li class="nav-item <?php $printActive = $pageName == 'buzzFeed'? "active" : "" ; echo $printActive; ?> ">
+                  <li class="nav-item">
                     <a class="nav-link" href="<?php echo base_url(); ?>buzzFeed">
                       <i class="material-icons">content_paste</i>
                       <p><?php echo $this->lang->line('menu_buzzFeed_label'); ?></p>
@@ -268,7 +270,7 @@
           </li>
           
           
-          <li class="nav-item <?php $printActive = $pageName == 'employeeSeparation'? "active" : "" ; echo $printActive; ?> ">
+          <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url(); ?>employeeSeparation">
               <i class="material-icons">content_paste</i>
               <p><?php echo $this->lang->line('menu_employeeSeparation_label'); ?></p>

@@ -48,7 +48,10 @@
                         <thead class="text-info">
                             <tr>
                                 <!-- th>Field 1</th-->
-                                
+                                <th><?php echo $this->lang->line('content_employeePosition_employeeId_label'); ?></th>
+<th><?php echo $this->lang->line('content_employeePosition_jobPositionId_label'); ?></th>
+<th><?php echo $this->lang->line('content_employeePosition_description_label'); ?></th>
+
                                 <th><?php echo $this->lang->line('content_createdDate_label'); ?></th>
                             </tr>
                         </thead>
@@ -59,7 +62,10 @@
                                     ?>
                                     <tr>
                                         <!-- td><?php echo $record->field1 ?></td-->
-                                        
+                                        <td><?php echo $record->employeeId ?></td>
+<td><?php echo $record->jobPositionId ?></td>
+<td><?php echo $record->description ?></td>
+
                                         <td><?php echo date("d-m-Y", strtotime($record->createdDate)) ?></td>
 
                                         <td>

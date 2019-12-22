@@ -44,5 +44,6 @@ function loadUserPreferenceFormUIToEdit(id) {
 
 $(document).ready(function() {
 	//loadUserPreferenceListUI();
+	loadUserPreferenceFormUIToEdit(1);
 });
 

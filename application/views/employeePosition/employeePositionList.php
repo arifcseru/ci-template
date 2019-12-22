@@ -28,7 +28,10 @@
 						<thead class="text-info">
 							<tr>
 								<!-- th>Field 1</th-->
-								
+								<th><?php echo $this->lang->line('content_employeePosition_employeeId_label'); ?></th>
+<th><?php echo $this->lang->line('content_employeePosition_jobPositionId_label'); ?></th>
+<th><?php echo $this->lang->line('content_employeePosition_description_label'); ?></th>
+
 								<th><?php echo $this->lang->line('content_createdDate_label'); ?></th>
 								<th><?php echo $this->lang->line('content_actionButtons_label'); ?></th>
 							</tr>
@@ -40,7 +43,10 @@
 									?>
 									<tr>
 										<!-- td><?php echo $record->field1 ?></td-->
-										
+										<td><?php echo $record->employeeId ?></td>
+<td><?php echo $record->jobPositionId ?></td>
+<td><?php echo $record->description ?></td>
+
 										<td><?php
 													//echo date_format($record->createdDate, 'd/m/Y');
 													echo date("d-m-Y", strtotime($record->createdDate));
@@ -66,7 +72,10 @@
 												<button class="btn btn-info btn-sm" onclick="loadEmployeePositionFormUIToView(<?php echo $record->id; ?>)"><i class="fa fa-eye"></i></button>
 												<button class="btn btn-warning btn-sm" onclick="loadEmployeePositionFormUIToEdit(<?php echo $record->id; ?>)"><i class="fa fa-pencil"></i></button>
 												<a target="__BLANK" class="btn btn-warning btn-sm" href="<?php echo base_url(); ?>employeePosition/report/<?php echo $record->id; ?>"><i class="fa fa-print"></i></a>
-												<button class="btn btn-danger btn-sm" onclick="deleteEmployeePosition(<?php echo $record->id; ?>)"><i class="fa fa-trash"></i></button>
+												<?php if ($record->isApproved == "1") {
+															?>
+													<button class="btn btn-danger btn-sm" onclick="deleteEmployeePosition(<?php echo $record->id; ?>)"><i class="fa fa-trash"></i></button>
+												<?php } ?>
 											</div>
 
 										</td>

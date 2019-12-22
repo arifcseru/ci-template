@@ -428,3 +428,439 @@ content_frontPage_projects_label|Projects | Heading | Title | Heading | Headline
 content_frontPage_pricingPlan_label|Pricing Plan | Headline | Heading | Headline | Description
 content_frontPage_team_label|Team | Description | Headline | Description | Special Link
 
+content_employeeSeparationList_label|Employee Separation List | কর্মচারী পৃথকীকরণ তালিকা | कर्मचारी पृथक्करण सूची | Liste de départ des employés | Personentrennungsliste
+content_employeeSeparationForm_label|Employee Separation Form |  কর্মচারী পৃথকীকরণ ফর্ম |  कर्मचारी पृथक्करण प्रपत्र |  Formulaire de départ des employés |  Personentrennungsformular
+content_employeeSeparationReportList_label|Employee Separation Report List |  কর্মচারী পৃথকীকরণ রিপোর্টের তালিকা |  कर्मचारी पृथक्करण रिपोर्ट सूची |  Liste des rapports de départ des employés |  Personentrennungsberichtsliste
+content_employeeSeparation_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_employeeSeparation_separationMessage_label|Separation Message |  বিচ্ছেদ বার্তা |  पृथक्करण |  Message de départ |  Trennungsmeldung
+content_employeeSeparation_separationDate_label|Separation Date |  পৃথককরণের তারিখ |  पृथक्करण दिनांक |  Date de départ |  Trennungsdatum
+
+content_roleList_label|Role List | ভূমিকা তালিকা | भूमिका सूची | Liste de rôles | Rollenliste
+content_roleForm_label|Role Form |  ভূমিকা ফর্ম |  भूमिका प्रपत्र |  Formulaire de rôle |  Rollenformular
+content_roleReportList_label|Role Report List |  ভূমিকা প্রতিবেদন তালিকা |  भूमिका रिपोर्ट सूची |  Liste de rapports de rôles |  Rollenberichtsliste
+content_role_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_role_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+
+content_userList_label|User List | ব্যবহারকারীর তালিকা | उपयोगकर्ता सूची | Liste d'utilisateurs | Benutzerliste
+content_userForm_label|User Form |  ব্যবহারকারীর ফর্ম |  उपयोगकर्ता प्रपत्र |  Formulaire d'utilisateur |  Benutzerformular
+content_userReportList_label|User Report List |  ব্যবহারকারী রিপোর্ট তালিকা |  उपयोगकर्ता रिपोर्ट सूची |  Liste de rapports d'utilisateurs |  Benutzerberichtsliste
+content_user_fullName_label|Full Name |  পুরো নাম |  पूरा नाम |  Nom complet |  Vollständiger Name
+content_user_email_label|Email |  ইমেল |  ईमेल |  Email |  E-Mail
+content_user_password_label|Password |  পাসওয়ার্ড |  पासवर्ड |  Mot de passe |  Passwort
+content_user_confirmPassword_label|Confirm Password |  পাসওয়ার্ডের নিশ্চিতকরণ |  पासवर्ड की पुष्टि करें |  Confirmer le mot de passe |  Passwort bestätigen
+content_user_roleId_label|Role Id |  রোল আইডি |  रोल आईडी |  Identifiant de rôle |  Rollen-ID
+content_user_companyProfile_label|Company Profile |  কোম্পানির প্রোফাইল |  कंपनी प्रोफाइल |  Profil de l'entreprise |  Firmenprofil
+content_user_mobileNumber_label|Mobile Number |  মোবাইল নম্বর |  मोबाइल नंबर |  Numéro de mobile |  Handynummer
+
+content_userPreferenceList_label|User Preference List | ব্যবহারকারীর পছন্দের তালিকা | उपयोगकर्ता वरीयता सूची | Liste des préférences utilisateur | Benutzereinstellungsliste
+content_userPreferenceForm_label|User Preference Form |  ব্যবহারকারীর পছন্দের ফর্ম |  उपयोगकर्ता वरीयता प्रपत्र |  Formulaire de préférence utilisateur |  Benutzereinstellungsformular
+content_userPreferenceReportList_label|User Preference Report List |  ব্যবহারকারীর পছন্দের রিপোর্টের তালিকা |  उपयोगकर्ता वरीयता रिपोर्ट सूची |  Liste des rapports de préférence utilisateur |  Benutzereinstellungsberichtsliste
+content_userPreference_applicationTitle_label|Application Title |  অ্যাপ্লিকেশন শিরোনাম |  आवेदन शीर्षक |  Titre de l'application |  Anwendungstitel
+content_userPreference_metaTags_label|Meta Tags |  মেটা ট্যাগস |  मेटा टैग |  Balises méta |  Meta-Tags
+content_userPreference_userId_label|User Id |  ব্যবহারকারীর আইডি |  उपयोगकर्ता आईडी |  ID utilisateur |  Benutzer-ID
+content_userPreference_activeCompanyId_label|Active Company Id |  অ্যাক্টিভ কোম্পানির আইডি |  सक्रिय कंपनी आईडी |  ID d'entreprise actif |  Aktive Firmen-ID
+content_userPreference_language_label|Language |  ভাষা |  भाषा |  Langue |  Sprache
+content_userPreference_activeRole_label|Active Role |  অ্যাক্টিভ রোল |  सक्रिय भूमिका |  Rôle actif |  Aktive Rolle
+content_userPreference_showNotification_label|Show Notification |  নোটিফিকেশন দেখাও |  अधिसूचना दिखाएँ |  Afficher la notification |  Benachrichtigung anzeigen
+content_userPreference_showEmail_label|Show Email |  ইমেল দেখান টাস্ক দেখান |  शो ईमेल |  Afficher l'e-mail |  E-Mail anzeigen
+content_userPreference_showTask_label|Show Task | User Preference List |  दिखाएँ कार्य दिखाएँ।User Preference List |  Afficher la tâche |  Aufgabe anzeigen
+
+content_companyProfileList_label|Company Profile List | কোম্পানির প্রোফাইল তালিকা | कंपनी प्रोफाइल सूची | Liste de profil d'entreprise | Firmenprofil-Liste
+content_companyProfileForm_label|Company Profile Form |  কোম্পানির প্রোফাইল ফর্ম |  कंपनी प्रोफाइल फॉर्म |  Formulaire de profil d'entreprise |  Firmenprofil-Formular
+content_companyProfileReportList_label|Company Profile Report List |  কোম্পানির প্রোফাইল প্রতিবেদনের তালিকা |  कंपनी प्रोफाइल रिपोर्ट सूची |  Liste de rapports de profil d'entreprise |  Firmenprofil-Berichtsliste
+content_companyProfile_userId_label|User Id |  ব্যবহারকারীর আইডি |  उपयोगकर्ता आईडी |  ID utilisateur |  Benutzer-ID
+content_companyProfile_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_companyProfile_address_label|Address |  ঠিকানা |  पता |  Adresse |  Adresse
+content_companyProfile_establishedDate_label|Established Date |  প্রতিষ্ঠিত তারিখ |  स्थापना तिथि |  Date de création |  Gründungsdatum
+content_companyProfile_email_label|Email |  ইমেল |  ईमेल |  Email |  E-Mail
+content_companyProfile_authorName_label|Author Name |  লেখকের নাম |  लेखक का नाम |  Nom de l'auteur |  Autorenname
+
+content_branchList_label|Branch List | শাখার তালিকা | शाखा सूची | Liste de succursales | Zweigstellenliste
+content_branchForm_label|Branch Form |  শাখা ফর্ম |  शाखा प्रपत्र |  Formulaire de succursale |  Zweigstellenformular
+content_branchReportList_label|Branch Report List |  শাখা রিপোর্ট তালিকা |  शाखा रिपोर्ट सूची |  Liste de rapports de succursale |  Zweigstellenberichtsliste
+content_branch_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  Identifiant de profil d'entreprise |  Firmenprofil-ID
+content_branch_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_branch_address_label|Address |  ঠিকানা |  पता |  Adresse |  Adresse
+content_branch_establishedDate_label|Established Date |  প্রতিষ্ঠিত তারিখ |  स्थापना तिथि |  Date d'établissement |  Gründungsdatum
+
+content_departmentList_label|Department List | বিভাগের তালিকা | विभाग सूची | Liste des départements | Abteilungsliste
+content_departmentForm_label|Department Form |  বিভাগের ফর্ম |  विभाग प्रपत्र |  Formulaire des départements |  Abteilungsformular
+content_departmentReportList_label|Department Report List |  বিভাগের রিপোর্টের তালিকা |  विभाग रिपोर्ट सूची |  Liste des rapports des départements |  Abteilungsberichtsliste
+content_department_branchId_label|Branch Id |  শাখার আইডি |  शाखा आईडी |  Identifiant de la succursale |  Filial-ID
+content_department_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_department_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  संक्षिप्त कोड |  Code abrégé |  Funktionscode
+content_department_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+
+content_jobPositionList_label|Job Position List | কাজের অবস্থানের তালিকা | नौकरी की स्थिति की सूची | Liste des postes | Job-Positionsliste
+content_jobPositionForm_label|Job Position Form |  চাকরির অবস্থানের ফর্ম |  नौकरी की स्थिति का प्रारूप |  Formulaire de poste |  Job-Positionsformular
+content_jobPositionReportList_label|Job Position Report List |  চাকরির পজিশনের রিপোর্টের তালিকা |  नौकरी की स्थिति की रिपोर्ट सूची |  Liste des rapports de poste |  Job-Positionsberichtsliste
+content_jobPosition_departmentId_label|Department Id |  বিভাগের আইডি |  विभाग की आईडी |  ID du service |  Abteilungs-ID
+content_jobPosition_positionName_label|Position Name |  পদের নাম |  स्थिति का नाम |  Nom du poste |  Positionsname
+content_jobPosition_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  संक्षिप्त कोड |  Code de fonction |  Funktionscode
+content_jobPosition_description_label|Description |  বর্ণনা |  विवरण |  Description |  Beschreibung
+content_jobPosition_isActive_label|Is Active |  সক্রিয় |  सक्रिय |  Est actif |  Ist aktiv
+
+content_jobPostingList_label|Job Posting List | চাকরির পোস্টিং তালিকা | जॉब पोस्टिंग लिस्ट | Liste d'affichage des offres d'emploi | Stellenausschreibungsliste
+content_jobPostingForm_label|Job Posting Form |  চাকরির পোস্টিং ফর্ম |  जॉब पोस्टिंग फॉर्म |  Formulaire d'affichage des offres d'emploi |  Stellenausschreibungsformular
+content_jobPostingReportList_label|Job Posting Report List |  চাকরির পোস্টিং রিপোর্টের তালিকা |  जॉब पोस्टिंग रिपोर्ट लिस्ट |  Liste des rapports d'affichage des offres d'emploi |  Stellenausschreibungsberichtsliste
+content_jobPosting_positionName_label|Position Name |  পদের নাম |  पोजीशन का नाम |  Nom du poste |  Positionsname
+content_jobPosting_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  शॉर्ट कोड |  Code abrégé |  Funktionscode
+content_jobPosting_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_jobPosting_jobPositionId_label|Job Position Id |  চাকরির পজিশনের আইডি |  जॉब पोजिशन |  ID de la position d'emploi |  Stellenpositions-ID
+content_jobPosting_postingDate_label|Posting Date |  পোস্টের তারিখ |  पोस्टिंग की तारीख |  Date d'affichage |  Buchungsdatum
+content_jobPosting_expireDate_label|Expire Date |  মেয়াদ শেষ হওয়ার তারিখ |  समाप्ति तिथि |  Date d'expiration |  Ablaufdatum
+
+content_jobApplicationList_label|Job Application List | চাকরীর আবেদনের তালিকা | नौकरी आवेदन सूची नौकरी आवेदन पत्र नौकरी आवेदन रिपोर्ट सूची नौकरी की स्थिति आईडी | Liste des demandes d'emploi | Liste der Bewerbungen
+content_jobApplicationForm_label|Job Application Form |  চাকরীর আবেদনের ফর্ম |  पहला नाम |  Formulaire de demande d'emploi |  Bewerbungsformular
+content_jobApplicationReportList_label|Job Application Report List |  চাকরীর আবেদনের রিপোর্টের তালিকা |  अंतिम नाम |  Liste des rapports de demande d'emploi |  Liste der Bewerbungsberichte
+content_jobApplication_jobPositionId_label|Job Position Id |  চাকরির পজিশনের আইডি |  आवेदक फोन नंबर |  ID de la position d'emploi |  ID der Position
+content_jobApplication_firstName_label|First Name |  প্রথম নাম |  ईमेल |  Prénom |  Vorname
+content_jobApplication_lastName_label|Last Name |  শেষ নাম |  अपेक्षित वेतन |  Nom de famille |  Nachname
+content_jobApplication_applicantPhoneNo_label|Applicant Phone No |  আবেদনকারী ফোন নম্বর |  संदेश |  N ° de téléphone du demandeur |  Telefonnummer des Bewerbers
+content_jobApplication_email_label|Email |  ইমেল |  कौशल |  Courriel |  E-Mail-Adresse
+content_jobApplication_expectedSalary_label|Expected Salary |  প্রত্যাশিত বেতন |  फिर से शुरू फ़ाइल पता।Job Application List |  Salaire prévu |  Gehaltsvorstellung
+content_jobApplication_message_label|Message |  বার্তা | Job Application Form |  Message |  Nachricht
+content_jobApplication_skills_label|Skills |  দক্ষতা | Job Application Report List |  Compétences |  Fähigkeiten
+content_jobApplication_resumeFileAddress_label|Resume File Address |  ফাইলের ঠিকানা পুনরায় শুরু করুন | Job Position Id |  Adresse du fichier de CV |  Adresse der Bewerbungsdatei
+
+content_applicantInfoList_label|Applicant Info List | আবেদনকারীর তথ্য তালিকা | आवेदक की जानकारी की सूची | Liste d'informations sur le demandeur | Bewerberinfo-Liste
+content_applicantInfoForm_label|Applicant Info Form |  আবেদনকারীর তথ্য ফর্ম |  आवेदक की जानकारी का प्रारूप |  Formulaire d'informations sur le demandeur |  Bewerberinfo-Formular
+content_applicantInfoReportList_label|Applicant Info Report List |  আবেদনকারীর তথ্য প্রতিবেদন তালিকা |  आवेदक की सूचना रिपोर्ट |  Liste de rapports d'informations sur le demandeur |  Bewerberinfo-Berichtsliste
+content_applicantInfo_jobApplicationId_label|Job Application Id |  চাকরীর আবেদন আইডি |  नौकरी का आवेदन क्रमांक |  ID de demande d'emploi |  Bewerbungs-ID
+content_applicantInfo_enrollmentId_label|Enrollment Id |  তালিকাভুক্তির আইডি |  नामांकन क्रमांक |  ID d'inscription |  Einschreibungs-ID
+content_applicantInfo_firstName_label|First Name |  প্রথম নাম |  प्रथम नाम |  Prénom |  Vorname
+content_applicantInfo_lastName_label|Last Name |  শেষ নাম |  अंतिम नाम |  Nom de famille |  Nachname
+content_applicantInfo_fatherName_label|Father Name |  পিতার নাম |  पिता का नाम |  Nom du père |  Name des Vaters
+content_applicantInfo_motherName_label|Mother Name |  মাতার নাম |  माता का नाम |  Nom de la mère |  Name der Mutter
+content_applicantInfo_spouseName_label|Spouse Name |  স্ত্রীর নাম |  पति का नाम |  Nom du conjoint |  Name des Ehepartners
+content_applicantInfo_nationality_label|Nationality |  জাতীয়তা |  राष्ट्रीयता |  Nationalité |  Nationalität
+content_applicantInfo_gender_label|Gender |  লিঙ্গ |  लिंग |  Sexe |  Geschlecht
+content_applicantInfo_age_label|Age |  বয়স |  आयु |  Âge |  Alter
+content_applicantInfo_profilePic_label|Profile Pic |  প্রোফাইল পিক |  प्रोफाइल पिक |  Photo du profil |  Profilfoto
+content_applicantInfo_signature_label|Signature |  স্বাক্ষর |  हस्ताक्षर |  Signature |  Unterschrift
+content_applicantInfo_nidImage_label|Nid Image |  নিদ চিত্র |  उदासीन छवि |  Image Nid |  Nid Image
+content_applicantInfo_eduQualification_label|Edu Qualification |  এডু Applicant Info List |  एडू। Applicant Info List |  Edu Applicant Info List |  Edu Applicant Info List
+content_applicantInfo_bloodGroup_label|Blood Group | Applicant Info Form | Applicant Info Form | Applicant Info Form | Applicant Info Form
+content_applicantInfo_religion_label|Religion | Applicant Info Report List | Applicant Info Report List | Applicant Info Report List | Applicant Info Report List
+content_applicantInfo_address_label|Address | Job Application Id | Job Application Id | Job Application Id | Job Application Id
+content_applicantInfo_streetAddress_label|Street Address | Enrollment Id | Enrollment Id | Enrollment Id | Enrollment Id
+content_applicantInfo_district_label|District | First Name | First Name | First Name | First Name
+content_applicantInfo_policeStation_label|Police Station | Last Name | Last Name | Last Name | Last Name
+content_applicantInfo_postCode_label|Post Code | Father Name | Father Name | Father Name | Father Name
+content_applicantInfo_chairmanName_label|Chairman Name | Mother Name | Mother Name | Mother Name | Mother Name
+content_applicantInfo_contactNo_label|Contact No | Spouse Name | Spouse Name | Spouse Name | Spouse Name
+content_applicantInfo_interviewInfo_label|Interview Info | Nationality | Nationality | Nationality | Nationality
+content_applicantInfo_traineeCourses_label|Trainee Courses | Gender | Gender | Gender | Gender
+content_applicantInfo_postingId_label|Posting Id | Age | Age | Age | Age
+content_applicantInfo_email_label|Email | Profile Pic | Profile Pic | Profile Pic | Profile Pic
+content_applicantInfo_password_label|Password | Signature | Signature | Signature | Signature
+content_applicantInfo_isJoined_label|Is Joined | Nid Image | Nid Image | Nid Image | Nid Image
+
+content_traineeCoursesList_label|Trainee Courses List | প্রশিক্ষণার্থী কোর্স তালিকা | प्रशिक्षु पाठ्यक्रम सूची | Liste des cours des stagiaires | Liste der Praktikantenkurse
+content_traineeCoursesForm_label|Trainee Courses Form |  প্রশিক্ষণার্থী কোর্স ফর্ম |  प्रशिक्षु पाठ्यक्रम प्रपत्र |  Formulaire des cours des stagiaires |  Formular für Praktikantenkurse
+content_traineeCoursesReportList_label|Trainee Courses Report List |  প্রশিক্ষণার্থী কোর্স রিপোর্ট তালিকা |  प्रशिक्षु पाठ्यक्रम रिपोर्ट सूची |  Liste des rapports des cours des stagiaires |  Liste der Praktikantenkurse
+content_traineeCourses_courseId_label|Course Id |  কোর্স আইডি |  पाठ्यक्रम आईडी |  ID du cours |  Kurs-ID
+content_traineeCourses_applicantInfoId_label|Applicant Info Id |  আবেদনকারী তথ্য আইডি |  आवेदक सूचना आईडी |  ID des informations sur le demandeur |  Bewerberinformations-ID
+content_traineeCourses_shortCode_label|Short Code |  শর্ট কোড |  लघु कोड |  Code court |  Funktionscode
+
+content_interviewInfoList_label|Interview Info List | সাক্ষাত্কার তথ্য তালিকা | साक्षात्कार सूचना सूची | Liste des informations sur les entretiens | Liste der Vorstellungsgesprächsinformationen
+content_interviewInfoForm_label|Interview Info Form |  সাক্ষাত্কার তথ্য ফর্ম |  साक्षात्कार सूचना प्रपत्र |  Formulaire sur les informations sur les entretiens |  Formular für Vorstellungsgesprächsinformationen
+content_interviewInfoReportList_label|Interview Info Report List |  সাক্ষাত্কার তথ্য প্রতিবেদন তালিকা |  साक्षात्कार जानकारी रिपोर्ट सूची |  Liste des rapports sur les informations sur les entretiens |  Berichtsliste für Vorstellungsgesprächsinformationen
+content_interviewInfo_applicantInfoId_label|Applicant Info Id |  আবেদনকারীর তথ্য আইডি |  आवेदक जानकारी आईडी |  Identifiant des informations sur le demandeur |  Bewerberinformations-ID
+content_interviewInfo_interviewType_label|Interview Type |  সাক্ষাত্কারের ধরন |  साक्षात्कार प्रकार |  Type d'entrevue |  Art des Vorstellungsgesprächs
+content_interviewInfo_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  लघु और कुल अंक |  Code abrégé |  Funktionscode
+content_interviewInfo_totalMarks_label|Total Marks |  মোট চিহ্ন |  प्राप्त अंक |  Total des notes |  Gesamtpunktzahl
+content_interviewInfo_obtainedMarks_label|Obtained Marks |  প্রাপ্ত চিহ্নসমূহ |  विवरण |  Marques obtenues |  erhaltene Punkte
+content_interviewInfo_description_label|Description |  বর্ণনা |  साक्षात्कारकर्ता आईडी।Interview Info List |  Description |  Beschreibung
+content_interviewInfo_interviewerId_label|Interviewer Id |  সাক্ষাত্কারের আইডি | Interview Info Form |  Identifiant de l'intervieweur |  Interviewer-ID
+
+content_employeeList_label|Employee List | কর্মচারী তালিকা | कर्मचारी सूची | Liste des employés | Mitarbeiterliste
+content_employeeForm_label|Employee Form |  কর্মচারী ফর্ম |  कर्मचारी प्रपत्र |  Formulaire de l'employé |  Mitarbeiterformular
+content_employeeReportList_label|Employee Report List |  কর্মচারী রিপোর্টের তালিকা |  कर्मचारी रिपोर्ट सूची |  Liste des rapports des employés |  Mitarbeiterberichtsliste
+content_employee_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  Identifiant de profil d'entreprise |  Firmenprofil-ID
+content_employee_trainingInfo_label|Training Info |  প্রশিক্ষণের তথ্য |  प्रशिक्षण जानकारी |  Informations de formation |  Schulungsinformationen
+content_employee_empDocInfo_label|Emp Doc Info |  এমপ ডক্স ইনফো |  नियोक्ता |  Emp Doc Info |  Mitarbeiter-Doc-Info
+content_employee_applicantId_label|Applicant Id |  আবেদক আইডি |  आवेदक आईडी |  Identifiant du demandeur |  Bewerber-ID
+content_employee_firstName_label|First Name |  প্রথম নাম |  पहला नाम |  Prénom |  Vorname
+content_employee_lastName_label|Last Name |  শেষ নাম |  अंतिम नाम |  Nom de famille |  Nachname
+content_employee_fatherName_label|Father Name |  পিতার নাম |  पिता का नाम |  Nom du père |  Name des Vaters
+content_employee_motherName_label|Mother Name |  মাতার নাম |  माता का नाम |  Nom de la mère |  Name der Mutter
+content_employee_spouseName_label|Spouse Name |  স্ত্রীর নাম |  पति का नाम |  Nom du conjoint |  Name des Ehepartners
+content_employee_nationality_label|Nationality |  জাতীয়তা |  राष्ट्रीयता |  Nationalité |  Nationalität
+content_employee_gender_label|Gender |  লিঙ্গ |  लिंग |  Sexe |  Geschlecht
+content_employee_age_label|Age |  বয়স |  आयु |  Âge |  Alter
+content_employee_profilePic_label|Profile Pic |  প্রোফাইল পিক |  प्रोफाइल पिक |  Photo du profil |  Profilbild
+content_employee_signature_label|Signature |  স্বাক্ষর |  हस्ताक्षर |  Signature |  Unterschrift
+content_employee_nidImage_label|Nid Image |  Employee List |  Employee List |  Employee List |  Employee List
+content_employee_eduQualification_label|Edu Qualification | Employee Form | Employee Form | Employee Form | Employee Form
+content_employee_bloodGroup_label|Blood Group | Employee Report List | Employee Report List | Employee Report List | Employee Report List
+content_employee_religion_label|Religion | Company Profile Id | Company Profile Id | Company Profile Id | Company Profile Id
+content_employee_address_label|Address | Training Info | Training Info | Training Info | Training Info
+content_employee_streetAddress_label|Street Address | Emp Doc Info | Emp Doc Info | Emp Doc Info | Emp Doc Info
+content_employee_district_label|District | Applicant Id | Applicant Id | Applicant Id | Applicant Id
+content_employee_policeStation_label|Police Station | First Name | First Name | First Name | First Name
+content_employee_postCode_label|Post Code | Last Name | Last Name | Last Name | Last Name
+content_employee_chairmanName_label|Chairman Name | Father Name | Father Name | Father Name | Father Name
+content_employee_contactNo_label|Contact No | Mother Name | Mother Name | Mother Name | Mother Name
+content_employee_email_label|Email | Spouse Name | Spouse Name | Spouse Name | Spouse Name
+content_employee_managerId_label|Manager Id | Nationality | Nationality | Nationality | Nationality
+
+content_employeePositionList_label|Employee Position List | কর্মী পজিশনের তালিকা | कर्मचारी स्थिति सूची | Liste des postes d'employé | Mitarbeiterpositionsliste
+content_employeePositionForm_label|Employee Position Form |  কর্মী পজিশনের ফর্ম |  कर्मचारी स्थिति प्रपत्र |  Formulaire de poste d'employé |  Mitarbeiterpositionsformular
+content_employeePositionReportList_label|Employee Position Report List |  কর্মচারী অবস্থানের প্রতিবেদন তালিকা |  कर्मचारी स्थिति रिपोर्ट सूची |  Liste des rapports de poste d'employé |  Mitarbeiterpositionsberichtsliste
+content_employeePosition_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  ID d'employé |  Mitarbeiter-ID
+content_employeePosition_jobPositionId_label|Job Position Id |  চাকরির অবস্থানের আইডি |  नौकरी की स्थिति सूची विवरण |  ID de poste d'emploi |  Jobpositions-ID
+content_employeePosition_description_label|Description |  বর্ণনা | Employee Position List |  Description |  Beschreibung
+
+content_attendanceInfoList_label|Attendance Info List | উপস্থিতি সম্পর্কিত তথ্য তালিকা | उपस्थिति जानकारी सूची | Liste d'informations de présence | Anwesenheitsinformationsliste
+content_attendanceInfoForm_label|Attendance Info Form |  উপস্থিতি সম্পর্কিত তথ্য ফর্ম |  उपस्थिति जानकारी प्रपत्र |  Formulaire d'informations de présence |  Anwesenheitsinformationsformular
+content_attendanceInfoReportList_label|Attendance Info Report List |  উপস্থিতি সম্পর্কিত তথ্য প্রতিবেদন তালিকা |  उपस्थिति जानकारी रिपोर्ट सूची |  Liste de rapports d'informations sur la présence |  Anwesenheitsinformationsberichtsliste
+content_attendanceInfo_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
+content_attendanceInfo_attendanceDate_label|Attendance Date |  উপস্থিতির তারিখ |  उपस्थिति तिथि |  Date de présence |  Anwesenheitsdatum
+content_attendanceInfo_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_attendanceInfo_supervisorId_label|Supervisor Id |  সুপারভাইজার আইডি |  पर्यवेक्षक आईडी |  Identifiant du superviseur |  Betreuer-ID
+
+content_courseList_label|Course List | কোর্সের তালিকা | पाठ्यक्रम सूची | Liste des cours | Kursliste
+content_courseForm_label|Course Form |  কোর্স ফর্ম |  पाठ्यक्रम प्रपत्र |  Formulaire de cours |  Kursformular
+content_courseReportList_label|Course Report List |  কোর্স রিপোর্টের তালিকা |  पाठ्यक्रम रिपोर्ट सूची |  Liste des rapports de cours |  Kursberichtsliste
+content_course_subject_label|Subject |  বিষয় |  विषय |  Sujet |  Betreff
+content_course_shortCode_label|Short Code |  সংক্ষিপ্ত কোড |  संक्षिप्त कोड |  Code abrégé |  Funktionscode
+content_course_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_course_applicantInfoId_label|Applicant Info Id |  আবেদনকারীর তথ্য আইডি |  आवेदक सूचना आईडी |  ID d'informations du demandeur |  Bewerberinformations-ID
+content_course_supervisorId_label|Supervisor Id |  সুপারভাইজার আইডি |  पर्यवेक्षक आईडी |  ID du superviseur |  Betreuer-ID
+
+content_subjectList_label|Subject List | সাবজেক্ট তালিকা | विषय सूची | Liste de sujets | Themenliste
+content_subjectForm_label|Subject Form |  সাবজেক্ট ফর্ম |  विषय प्रपत्र |  Formulaire de sujet |  Themenformular
+content_subjectReportList_label|Subject Report List |  সাবজেক্ট রিপোর্টের লিস্ট |  विषय रिपोर्ट सूची |  Liste de rapports de sujet |  Themenberichtsliste
+content_subject_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
+content_subject_description_label|Description |  বর্ণনা |  विवरण |  Description |  Beschreibung
+content_subject_classDate_label|Class Date |  শ্রেণীর তারিখ |  वर्ग तिथि |  Date du cours |  Klassendatum
+content_subject_startHour_label|Start Hour |  শুরুর সময় |  घंटा प्रारंभ |  Heure de début |  Startstunde
+content_subject_duration_label|Duration |  সময়কাল |  अवधि |  Durée |  Dauer
+content_subject_courseId_label|Course Id |  কোর্স আইডি |  पाठ्यक्रम क्रमांक |  ID du cours |  Kurs-ID
+content_subject_teacherId_label|Teacher Id |  শিক্ষক আইডি |  शिक्षक का आईडी |  ID de l'enseignant |  Lehrerkennung
+
+content_trainingInfoList_label|Training Info List | প্রশিক্ষণ সম্পর্কিত তথ্য তালিকা | प्रशिक्षण सूचना सूची | Liste d'informations sur la formation | Liste der Schulungsinformationen
+content_trainingInfoForm_label|Training Info Form |  প্রশিক্ষণের তথ্য ফর্ম |  प्रशिक्षण सूचना प्रपत्र |  Formulaire d'informations sur la formation |  Formular für Schulungsinformationen
+content_trainingInfoReportList_label|Training Info Report List |  প্রশিক্ষণ সম্পর্কিত তথ্য প্রতিবেদন তালিকা |  प्रशिक्षण सूचना रिपोर्ट सूची |  Liste des rapports d'informations sur la formation |  Liste der Schulungsbericht
+content_trainingInfo_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  ID de l'employé |  Mitarbeiter-ID
+content_trainingInfo_courseId_label|Course Id |  কোর্স আইডি |  पाठ्यक्रम क्रमांक |  ID du cours |  Kurs-ID
+content_trainingInfo_shortCode_label|Short Code |  শর্ট কোড |  संक्षिप्त कोड |  Code de fonction |  Funktionscode
+content_trainingInfo_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_trainingInfo_supervisorId_label|Supervisor Id |  সুপারভাইজার আইডি |  पर्यवेक्षक आईडी |  ID du superviseur |  Betreuer-ID
+
+content_empTrainingList_label|Emp Training List | এম্প ট্রেনিং লিস্ট | एम्प्ल ट्रेनिंग लिस्ट | Liste de formation Emp | Emp-Trainingsliste
+content_empTrainingForm_label|Emp Training Form |  এমপ ট্রেনিং ফর্ম |  इम्प्लिमेंटेशन फॉर्म |  Formulaire de formation Emp |  Emp-Trainingsformular
+content_empTrainingReportList_label|Emp Training Report List |  এমপ ট্রেনিং রিপোর্টের তালিকা |  इम्प्लिमेंटेशन रिपोर्ट लिस्ट |  Liste de rapports de formation Emp |  Emp-Trainingsberichtsliste
+content_empTraining_courseId_label|Course Id |  কোর্স আইডি |  कोर्स आईडी |  ID de cours |  Kurs-ID
+content_empTraining_employeeId_label|Employee Id |  কর্মচারী আইডি |  एम्प्लॉई आईडी |  ID d'employé |  Mitarbeiter-ID
+content_empTraining_title_label|Title |  শিরোনাম |  टाइटल |  Titre |  Titel
+content_empTraining_trainingDetails_label|Training Details |  প্রশিক্ষণের বিবরণ |  ट्रेनिंग डिटेल्स |  Détails de la formation |  Trainingsdetails
+content_empTraining_approverId_label|Approver Id |  অনুমোদক আইডি |  अप्रूवल आईडी।Emp Training List |  ID d'approbateur |  Genehmiger-ID
+
+content_trainingDetailsList_label|Training Details List | প্রশিক্ষণের বিশদ তালিকা | प्रशिक्षण विवरण सूची | Liste des détails de la formation | Liste der Trainingsdetails
+content_trainingDetailsForm_label|Training Details Form |  প্রশিক্ষণের বিশদ ফর্ম |  प्रशिक्षण विवरण प्रपत्र |  Formulaire des détails de la formation |  Formular für Trainingsdetails
+content_trainingDetailsReportList_label|Training Details Report List |  প্রশিক্ষণের বিবরণী রিপোর্টের তালিকা |  प्रशिक्षण विवरण रिपोर्ट सूची |  Liste des rapports des détails de la formation |  Liste der Trainingsdetails
+content_trainingDetails_subjectId_label|Subject Id |  বিষয় আইডি |  विषय आईडी |  Identifiant du sujet |  Betreff-ID
+content_trainingDetails_hourNo_label|Hour No |  আওয়ার নং |  घंटे नहीं |  Heure non |  Stunden-Nr.
+content_trainingDetails_classDate_label|Class Date |  শ্রেণির তারিখ |  कक्षा की तारीख |  Date du cours |  Klassendatum
+content_trainingDetails_isAttend_label|Is Attend |  উপস্থিতি রয়েছে |  उपस्थिति है टिप्पणीTraining Details List |  Participe |  Wird besucht
+content_trainingDetails_remarks_label|Remarks |  মন্তব্যসমূহ | Training Details Form |  Remarques |  Bemerkungen
+
+content_empDocInfoList_label|Emp Doc Info List | এম্প ডক ইনফো লিস্ট | एम्प्लॉई डॉक इन्फोर्मेशन | Emp Info Info List | Emp Doc-Info-Liste
+content_empDocInfoForm_label|Emp Doc Info Form |  এমপ ডক ইনফো ফর্ম |  एम्पल डॉक इन्फोर्मेशन |  Emp Doc Info Form |  Emp Doc-Info-Formular
+content_empDocInfoReportList_label|Emp Doc Info Report List |  এমপ ডক ইনফো রিপোর্ট রিপোর্ট |  एम्प डॉक इन्फोर्मेशन लिस्ट |  Emp Doc Info Report List |  Emp Doc-Info-Berichtsliste
+content_empDocInfo_employeeId_label|Employee Id |  কর্মচারী আইডি |  एम्प्लॉई आईडी |  Employee Id |  Mitarbeiter-ID
+content_empDocInfo_documentName_label|Document Name |  ডকুমেন্টের নাম |  डॉक्यूमेंट नेम |  Document Name |  Dokumentname
+content_empDocInfo_documentDetails_label|Document Details |  ডকুমেন্টের বিবরণ |  डॉक्यूमेंट का विवरण टैग |  Document Details |  Dokumentdetails
+content_empDocInfo_tags_label|Tags |  ট্যাগস |  डॉक्यूमेंट डॉक्यूमेंट |  Tags |  Tags
+content_empDocInfo_document_label|Document |  ডকুমেন্ট | Emp Doc Info List |  Document |  Dokument
+
+content_leaveTypeList_label|Leave Type List | প্রকারের তালিকা ছেড়ে দিন | टाइप लिस्ट छोड़ो | Quitter la liste des types | Typliste verlassen
+content_leaveTypeForm_label|Leave Type Form |  প্রকার ত্যাগের ফর্ম |  टाइप टाइप छोड़ो |  Formulaire de type de congé |  Typformular verlassen
+content_leaveTypeReportList_label|Leave Type Report List |  প্রস্থান ত্যাগের রিপোর্টের তালিকা |  टाइप टाइप लिस्ट छोड़ो |  Liste des rapports de type de congé |  Typberichtsliste verlassen
+content_leaveType_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_leaveType_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+
+content_leaveRequestList_label|Leave Request List | অনুরোধের তালিকাটি ছেড়ে দিন | रिक्वेस्ट लिस्ट छोड़ो रिक्वेस्ट फॉर्म छोड़ो | Liste des demandes de congé | Anforderungsliste verlassen
+content_leaveRequestForm_label|Leave Request Form |  অনুরোধের ফর্মটি ছেড়ে দিন |  रिक्वेस्ट रिपोर्ट लिस्ट छोड़ो |  Formulaire de demande de congé |  Anforderungsformular verlassen
+content_leaveRequestReportList_label|Leave Request Report List |  অনুরোধের রিপোর্টের তালিকা ছেড়ে দিন |  कर्मचारी आईडी |  Liste des rapports de demande de congé |  Anforderungsberichtsliste verlassen
+content_leaveRequest_employeeId_label|Employee Id |  কর্মচারী আইডি |  लीव टाइप आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
+content_leaveRequest_leaveTypeId_label|Leave Type Id |  প্রকারের আইডি |  डेट से |  Identifiant du type de congé |  Typ-ID verlassen
+content_leaveRequest_fromDate_label|From Date |  তারিখ থেকে |  थ्रू डेट |  Date de début |  Ab Datum
+content_leaveRequest_thruDate_label|Thru Date |  তারিখের মাধ্যমে | Leave Request List |  Date de fin |  Durch Datum
+
+content_holidayTypeList_label|Holiday Type List | ছুটির ধরণের তালিকা | हॉलिडे टाइप लिस्ट | Liste des types de vacances | Feiertagsartenliste
+content_holidayTypeForm_label|Holiday Type Form |  ছুটির ধরণের ফর্ম |  हॉलीडे टाइप फॉर्म |  Formulaire de type de vacances |  Feiertagsartenformular
+content_holidayTypeReportList_label|Holiday Type Report List |  ছুটির ধরণের রিপোর্টের তালিকা |  हॉलीडे टाइप रिपोर्ट लिस्ट |  Liste des rapports sur les types de vacances |  Feiertagsartenberichtsliste
+content_holidayType_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_holidayType_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+
+content_holidayList_label|Holiday List | ছুটির তালিকা | हॉलिडे लिस्ट | Liste de congés | Feiertagsliste
+content_holidayForm_label|Holiday Form |  হলিডে ফর্ম |  हॉलीडे फॉर्म |  Formulaire de congés |  Feiertagsformular
+content_holidayReportList_label|Holiday Report List |  হলিডে রিপোর্টের তালিকা |  हॉलीडे रिपोर्ट लिस्ट |  Liste des rapports de congés |  Feiertagsberichtsliste
+content_holiday_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
+content_holiday_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_holiday_holidayTypeId_label|Holiday Type Id |  ছুটির ধরণের আইডি |  हॉलिडे टाइप आईडी |  Identifiant du type de congés |  Feiertagsart-ID
+content_holiday_fromDate_label|From Date |  তারিখ থেকে |  तारीख से |  De la date |  Ab Datum
+content_holiday_thruDate_label|Thru Date |  তারিখের মধ্য দিয়ে |  थ्रू डेट |  À la date |  Durch Datum
+
+content_expepnseTypeList_label|Expepnse Type List | Expepnse প্রকারের তালিকা | Expepnse टाइप सूची | Liste de types Expepnse | Expepnse Type List
+content_expepnseTypeForm_label|Expepnse Type Form |  Expepnse প্রকারের ফর্ম |  Expepnse टाइप फॉर्म |  Formulaire de type Expepnse |  Expepnse Type Form
+content_expepnseTypeReportList_label|Expepnse Type Report List |  Expepnse ধরণের প্রতিবেদন তালিকা |  Expepnse टाइप रिपोर्ट सूची |  Liste de rapports de type Expepnse |  Expepnse Type Report List
+content_expepnseType_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_expepnseType_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+
+content_expenseList_label|Expense List | ব্যয়ের তালিকা | व्यय सूची | Liste de dépenses | Spesenliste
+content_expenseForm_label|Expense Form |  ব্যয়ের ফর্ম |  व्यय प्रपत्र |  Formulaire de dépenses |  Spesenformular
+content_expenseReportList_label|Expense Report List |  ব্যয়ের রিপোর্টের তালিকা |  व्यय रिपोर्ट सूची |  Liste des notes de frais |  Spesenabrechnungsliste
+content_expense_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  ID d'employé |  Mitarbeiter-ID
+content_expense_expenseTypeId_label|Expense Type Id |  ব্যয়ের ধরণের আইডি |  व्यय प्रकार आईडी |  ID de type de dépenses |  Spesentyp-ID
+content_expense_amount_label|Amount |  পরিমাণ |  राशि |  Montant |  Betrag
+content_expense_transactionDate_label|Transaction Date |  লেনদেনের তারিখ |  लेन-देन दिनांक।Expense List |  Date de transaction |  Transaktionsdatum
+
+content_incomeTypeList_label|Income Type List | আয়ের ধরণের তালিকা | आय प्रकार सूची | Liste des types de revenus | Einkommensartenliste
+content_incomeTypeForm_label|Income Type Form |  আয়ের ধরণের ফর্ম |  आय प्रकार फार्म |  Formulaire des types de revenus |  Einkommensartenformular
+content_incomeTypeReportList_label|Income Type Report List |  আয়ের ধরণের রিপোর্টের তালিকা |  आय प्रकार रिपोर्ट सूची |  Liste des rapports sur les types de revenus |  Einkommensartenberichtsliste
+content_incomeType_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_incomeType_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+
+content_incomeList_label|Income List | আয়ের তালিকা | आय सूची | Liste des revenus | Einkommensliste
+content_incomeForm_label|Income Form |  আয় ফর্ম |  आय प्रपत्र |  Formulaire de revenu |  Einkommensformular
+content_incomeReportList_label|Income Report List |  আয় রিপোর্টের তালিকা |  आय रिपोर्ट सूची |  Liste des rapports sur les revenus |  Einkommensberichtsliste
+content_income_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
+content_income_incomeTypeId_label|Income Type Id |  আয়ের ধরণের আইডি |  आय प्रकार आईडी |  Identifiant du type de revenu |  Einkommensart-ID
+content_income_amount_label|Amount |  পরিমাণ |  राशि |  Montant |  Betrag
+content_income_transactionDate_label|Transaction Date |  লেনদেনের তারিখ |  लेन-देन की तारीख |  Date de transaction |  Transaktionsdatum
+
+content_companyBalanceList_label|Company Balance List | কোম্পানির ব্যালেন্সের তালিকা | कंपनी शेष सूची | Liste du solde de la société | Firmenbilanzliste
+content_companyBalanceForm_label|Company Balance Form |  কোম্পানির ব্যালেন্স ফর্ম |  कंपनी शेष फार्म |  Formulaire du solde de la société |  Firmenbilanzformular
+content_companyBalanceReportList_label|Company Balance Report List |  কোম্পানির ব্যালেন্স রিপোর্টের তালিকা |  कंपनी शेष रिपोर्ट सूची |  Liste des rapports sur le solde de la société |  Firmenbilanzberichtsliste
+content_companyBalance_companyProfileId_label|Company Profile Id |  কোম্পানির প্রোফাইল আইডি |  कंपनी प्रोफाइल आईडी |  Identifiant du profil de la société |  Firmenprofil-ID
+content_companyBalance_initialBalance_label|Initial Balance |  প্রাথমিক ব্যালেন্স |  प्रारंभिक शेष |  Solde initial |  Anfangssaldo
+content_companyBalance_currentBalance_label|Current Balance |  বর্তমান ব্যালেন্স |  वर्तमान शेष राशि |  Solde actuel |  Aktueller Saldo
+
+content_disciplinaryCasesList_label|Disciplinary Cases List | ডিসিপ্লিনারি কেস তালিকা | अनुशासनात्मक मामलों की सूची | Liste des cas disciplinaires | Disziplinarfallliste
+content_disciplinaryCasesForm_label|Disciplinary Cases Form |  ডিসিপ্লিনারি কেস ফর্ম |  अनुशासनात्मक मामलों की रिपोर्ट |  Formulaire des cas disciplinaires |  Disziplinarfallformular
+content_disciplinaryCasesReportList_label|Disciplinary Cases Report List |  ডিসিপ্লিনারি কেস রিপোর্টের লিস্ট |  अनुशासनात्मक मामलों की रिपोर्ट सूची |  Liste des rapports des cas disciplinaires |  Disziplinarfallberichtsliste
+content_disciplinaryCases_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
+content_disciplinaryCases_caseName_label|Case Name |  কেসের নাম |  केस का नाम |  Nom du cas |  Fallname
+content_disciplinaryCases_description_label|Description |  বর্ণনা |  विवरण |  Description |  Beschreibung
+
+content_employeeSalaryList_label|Employee Salary List | কর্মচারীদের বেতন তালিকা | कर्मचारी वेतन सूची | Liste des salaires des employés | Liste der Mitarbeitergehälter
+content_employeeSalaryForm_label|Employee Salary Form |  কর্মচারীদের বেতন ফর্ম |  कर्मचारी वेतन फॉर्म |  Formulaire de salaire des employés |  Formular für Mitarbeitergehälter
+content_employeeSalaryReportList_label|Employee Salary Report List |  কর্মচারী বেতন রিপোর্টের তালিকা |  कर्मचारी वेतन रिपोर्ट सूची |  Liste des rapports de salaires des employés |  Liste der Mitarbeitergehälter
+content_employeeSalary_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Identifiant de l'employé |  Mitarbeiter-ID
+content_employeeSalary_amount_label|Amount |  পরিমাণ |  राशि |  Montant |  Betrag
+content_employeeSalary_taxPercent_label|Tax Percent |  করের শতাংশ |  कर का प्रतिशतEmployee Salary List |  Pourcentage de taxe |  Steuerprozent
+
+content_providendFundList_label|Providend Fund List | ফান্ডের তালিকা সরবরাহ করুন | प्रोविडेंड फंड लिस्ट | Liste de fonds Providend | Providend-Fondsliste
+content_providendFundForm_label|Providend Fund Form |  তহবিলের ফর্ম সরবরাহ করুন |  प्रोविडेंड फंड फॉर्म |  Formulaire de fonds Providend |  Providend-Fondsformular
+content_providendFundReportList_label|Providend Fund Report List |  তহবিল রিপোর্টের তালিকা সরবরাহ করুন |  प्रोविडेंड फंड रिपोर्ट लिस्ट |  Liste de rapports de fonds Providend |  Providend-Fondsberichtsliste
+content_providendFund_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  ID d'employé |  Mitarbeiter-ID
+content_providendFund_monthlyAmount_label|Monthly Amount |  মাসিক পরিমাণ |  मासिक मासिक |  Montant mensuel |  Monatsbetrag
+content_providendFund_installmentMonths_label|Installment Months |  কিস্তির মাস |  किस्त महीने |  Mois de versement |  Ratenmonate
+content_providendFund_pfDetails_label|Pf Details |  পিএফ বিবরণ |  पीएफ विवरण |  Détails Pf |  Pf-Details
+
+content_pfDetailsList_label|Pf Details List | পিএফ বিশদ তালিকা | Pf विवरण सूची | Pf Details List | Pf-Details-Liste
+content_pfDetailsForm_label|Pf Details Form |  পিএফ বিবরণ ফর্ম |  Pf विवरण प्रपत्र |  Pf Details Form |  Pf-Details-Formular
+content_pfDetailsReportList_label|Pf Details Report List |  পিএফ বিবরণ রিপোর্টের তালিকা |  Pf विवरण रिपोर्ट सूची |  Pf Details Report List |  Pf-Details-Berichtsliste
+content_pfDetails_providendFundId_label|Providend Fund Id |  প্রদানের তহবিল আইডি |  प्रोविडेंड फंड आईडी |  Providend Fund Id |  Providend Fund Id
+content_pfDetails_employeeId_label|Employee Id |  কর্মচারী আইডি |  कर्मचारी आईडी |  Employee Id |  Employee Id
+content_pfDetails_monthNo_label|Month No |  মাসের নম্বর |  महीना नहीं |  Month No |  Month No
+content_pfDetails_empAmount_label|Emp Amount |  এমপ পরিমাণ |  राशि नहीं |  Emp Amount |  Emp Amount
+content_pfDetails_companyAmount_label|Company Amount |  কোম্পানির পরিমাণ |  कंपनी राशि |  Company Amount |  Company Amount
+
+content_pfLoanList_label|Pf Loan List | পিএফ anণ তালিকা | Pf लोन लिस्ट | Liste de prêts Pf | Pf-Darlehensliste
+content_pfLoanForm_label|Pf Loan Form |  পিএফ anণ ফর্ম |  Pf लोन फॉर्म |  Formulaire de prêt Pf |  Pf-Darlehensformular
+content_pfLoanReportList_label|Pf Loan Report List |  পিএফ anণ রিপোর্টের তালিকা |  Pf लोन रिपोर्ट लिस्ट |  Liste de rapports de prêts Pf |  Pf-Darlehensberichtsliste
+content_pfLoan_employeeId_label|Employee Id |  কর্মচারী আইডি |  Employee Id |  Identifiant de l'employé |  Mitarbeiter-ID
+content_pfLoan_installment_label|Installment |  কিস্তি |  किस्त |  Acompte |  Ratenzahlung
+content_pfLoan_transactionDate_label|Transaction Date |  লেনদেনের তারিখ |  लेन-देन |  Date de transaction |  Transaktionsdatum
+content_pfLoan_installmentFrom_label|Installment From |  কিস্তি থেকে |  किस्त |  Acompte de |  Ratenzahlung von
+content_pfLoan_pfLoanInstallment_label|Pf Loan Installment |  পিএফ anণের কিস্তি |  से |  Acompte de prêt Pf |  Pf-Darlehensrate
+content_pfLoan_installmentTo_label|Installment To |  কিস্তি থেকে |  Pf लोन की किस्त |  Acompte à |  Ratenzahlung bis
+
+content_pfLoanInstallmentList_label|Pf Loan Installment List | পিএফ anণের কিস্তি তালিকা | पीएफ ऋण किस्त सूची | Liste des versements pour les prêts Pf | Liste der Pf-Darlehensraten
+content_pfLoanInstallmentForm_label|Pf Loan Installment Form |  পিএফ anণ কিস্তি ফর্ম |  पीएफ ऋण किस्त फार्म |  Formulaire des versements pour les prêts Pf |  Formular für Pf-Darlehensraten
+content_pfLoanInstallmentReportList_label|Pf Loan Installment Report List |  পিএফ anণ কিস্তি রিপোর্টের তালিকা |  पीएफ ऋण किस्त रिपोर्ट सूची |  Liste des rapports des versements pour les prêts Pf |  Berichtsliste für Pf-Darlehensraten
+content_pfLoanInstallment_pfLoanId_label|Pf Loan Id |  পিএফ anণ আইডি |  पीएफ ऋण आईडी |  Identifiant du prêt Pf |  Pf-Darlehens-ID
+content_pfLoanInstallment_installment_label|Installment |  কিস্তি |  स्थापना |  Versement |  Rate
+content_pfLoanInstallment_monthNo_label|Month No |  মাস নং |  महीना नहीं |  Mois n ° |  Monats-Nr .
+content_pfLoanInstallment_transactionDate_label|Transaction Date |  লেনদেনের তারিখ |  लेन-देन की तारीख |  Date de transaction |  Transaktionsdatum
+
+content_publicMenuList_label|Public Menu List | পাবলিক মেনু তালিকা | सार्वजनिक मेनू सूची | Liste de menu publique | Öffentliche Menüliste
+content_publicMenuForm_label|Public Menu Form |  পাবলিক মেনু ফর্ম |  सार्वजनिक मेनू प्रपत्र |  Formulaire de menu public |  Formular für öffentliche Menüs
+content_publicMenuReportList_label|Public Menu Report List |  পাবলিক মেনু রিপোর্ট তালিকা |  सार्वजनिक मेनू रिपोर्ट सूची |  Liste de rapport de menu public |  Berichtsliste für öffentliche Menüs
+content_publicMenu_menuText_label|Menu Text |  মেনু পাঠ্য |  मेनू पाठ |  Texte de menu |  Menütext
+content_publicMenu_linkType_label|Link Type |  লিঙ্কের প্রকার |  लिंक प्रकार |  Type de lien |  Verknüpfungstyp
+content_publicMenu_menuLinkUrl_label|Menu Link Url |  মেনু লিঙ্ক url |  मेनू लिंक यूआरएल |  URL de lien de menu |  Link-URL für Menü
+
+content_featuresList_label|Features List | বৈশিষ্ট্য তালিকা | सुविधाएँ सूची | Liste des fonctionnalités | Funktionsliste
+content_featuresForm_label|Features Form |  বৈশিষ্ট্য ফর্ম |  सुविधाएँ फ़ॉर्म |  Formulaire des fonctionnalités |  Funktionsformular
+content_featuresReportList_label|Features Report List |  বৈশিষ্ট্যগুলি প্রতিবেদনের তালিকা |  सुविधाएँ रिपोर्ट सूची |  Liste des rapports sur les fonctionnalités |  Funktionsberichtsliste
+content_features_icon_label|Icon |  আইকন |  चिह्न |  Icône |  Symbol
+content_features_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
+content_features_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_features_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠার আইডি |  सामने पृष्ठ आईडी |  Identifiant de la première page |  ID der Startseite
+
+content_characteristicsList_label|Characteristics List | বৈশিষ্ট্য তালিকা | अभिलक्षण सूची | Liste de caractéristiques | Merkmalsliste
+content_characteristicsForm_label|Characteristics Form |  বৈশিষ্ট্য ফর্ম |  अभिलक्षण रूप |  Formulaire de caractéristiques |  Merkmalsformular
+content_characteristicsReportList_label|Characteristics Report List |  চরিত্রগত প্রতিবেদন তালিকা |  अभिलक्षण रिपोर्ट सूची |  Liste de rapports de caractéristiques |  Merkmalsberichtsliste
+content_characteristics_icon_label|Icon |  আইকন |  चिह्न |  Icône |  Symbol
+content_characteristics_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
+content_characteristics_description_label|Description |  বিবরণ |  विवरण |  Description |  Beschreibung
+content_characteristics_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠার আইডি |  सामने पृष्ठ आईडी |  Identifiant de la première page |  Titelseiten-ID
+
+content_projectsList_label|Projects List | প্রকল্পের তালিকা | प्रोजेक्ट्स लिस्ट | Liste de projets | Projektliste
+content_projectsForm_label|Projects Form |  প্রকল্পগুলির ফর্ম |  प्रोजेक्ट्स फॉर्म |  Formulaire de projets |  Projektformular
+content_projectsReportList_label|Projects Report List |  প্রকল্পগুলির প্রতিবেদনের তালিকা |  प्रोजेक्ट रिपोर्ट लिस्ट |  Liste de rapports de projets |  Projektberichtsliste
+content_projects_name_label|Name |  নাম |  नाम |  Nom |  Name
+content_projects_shortDetails_label|Short Details |  সংক্ষিপ্ত বিবরণ |  संक्षिप्त विवरण |  Détails courts |  Kurzdetails
+content_projects_features_label|Features |  বৈশিষ্ট্য |  विशेषताएं |  Caractéristiques |  Funktionen
+content_projects_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠার আইডি |  फ्रंट पेज आईडी |  Identifiant de la première page |  Titelseiten-ID
+
+content_pricingPlanList_label|Pricing Plan List | প্রাইসিং প্ল্যানের তালিকা | मूल्य निर्धारण योजना सूची | Liste de plans de tarification | Preisplanliste
+content_pricingPlanForm_label|Pricing Plan Form |  প্রাইসিং প্ল্যান ফর্ম |  मूल्य निर्धारण योजना प्रपत्र |  Formulaire de plan de tarification |  Preisplanformular
+content_pricingPlanReportList_label|Pricing Plan Report List |  প্রাইসিং প্ল্যান রিপোর্টের তালিকা |  मूल्य निर्धारण योजना रिपोर्ट सूची |  Liste de rapports de plan de tarification |  Preisplanberichtsliste
+content_pricingPlan_type_label|Type |  প্রকার |  प्रकार |  Type |  Typ
+content_pricingPlan_rate_label|Rate |  হার |  दर |  Taux |  Preis
+content_pricingPlan_unit_label|Unit |  ইউনিট |  इकाई |  Unité |  Einheit
+content_pricingPlan_buyLink_label|Buy Link |  লিংক কিনুন |  लिंक खरीदें |  Lien d'achat |  Kauflink
+content_pricingPlan_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠার আইডি |  फ्रंट पेज आईडी |  ID de première page |  Titelseiten-ID
+
+content_teamList_label|Team List | টিম তালিকা | टीम सूची | Liste des équipes | Teamliste
+content_teamForm_label|Team Form |  টিম ফর্ম |  टीम फॉर्म |  Formulaire d'équipe |  Teamformular
+content_teamReportList_label|Team Report List |  টিম রিপোর্ট তালিকা |  टीम रिपोर्ट सूची |  Liste des rapports d'équipe |  Teamberichtsliste
+content_team_memberName_label|Member Name |  সদস্যের নাম |  सदस्य का नाम |  Nom du membre |  Mitgliedsname
+content_team_designation_label|Designation |  পদবি |  पदनाम |  Désignation |  Bezeichnung
+content_team_about_label|About |  প্রায় |  के बारे में |  À propos |  Info
+content_team_githubLink_label|Github Link |  গিতুব লিঙ্ক |  जीथब लिंक |  Lien Github |  Github-Link
+content_team_twitterLink_label|Twitter Link |  টুইটার লিঙ্ক |  ट्विटर लिंक |  Lien Twitter |  Twitter-Link
+content_team_facebookLink_label|Facebook Link |  ফেসবুক লিঙ্ক |  फेसबुक लिंक |  Lien Facebook |  Facebook-Link
+content_team_frontPageId_label|Front Page Id |  সম্মুখ পৃষ্ঠা আইডি |  फ्रंट पेज आईडी |  Identifiant de la première page |  Titelseiten-ID
+
+content_frontPageList_label|Front Page List | সম্মুখ পৃষ্ঠার তালিকা | फ्रंट पेज सूची | Première page | Titelseitenliste
+content_frontPageForm_label|Front Page Form |  সম্মুখ পৃষ্ঠার ফর্ম |  फ्रंट पेज फॉर्म |  Formulaire de première page |  Formular der Titelseite
+content_frontPageReportList_label|Front Page Report List |  সম্মুখ পৃষ্ঠা রিপোর্টের তালিকা |  फ्रंट पेज रिपोर्ट सूची |  Liste de rapports de première page |  Berichtsliste der Titelseite
+content_frontPage_title_label|Title |  শিরোনাম |  शीर्षक |  Titre |  Titel
+content_frontPage_heading_label|Heading |  শিরোনাম |  शीर्षक |  En-tête |  Überschrift
+content_frontPage_headline_label|Headline |  শিরোনাম |  हेडलाइन |  Titre |  Beschreibung
+content_frontPage_description_label|Description |  বিবরণ |  विवरण |  Description |  Spezieller Link
+content_frontPage_specialLink_label|Special Link |  বিশেষ লিঙ্ক |  विशेष लिंक |  Lien spécial |  Link-Typ
+content_frontPage_linkType_label|Link Type |  লিঙ্কের প্রকার |  लिंक |  Type de lien |  Details Link
+content_frontPage_detailsLink_label|Details Link |  বিশদ লিঙ্ক |  विवरण |  Lien de détails |  Details Link-Text
+content_frontPage_detailsLinkText_label|Details Link Text |  বিশদ লিঙ্ক পাঠ্য |  लिंक |  Texte du lien de détails |  Kontakt Überschrift
+content_frontPage_contactUsHeadline_label|Contact Us Headline |  আমাদের সাথে যোগাযোগ করুন শিরোনাম |  विवरण लिंक टेक्स्ट |  Contactez-nous Titre |  Fußzeilen-Nachricht
+content_frontPage_footerMessage_label|Footer Message |  পাদচরণ বার্তা |  हमसे संपर्क करें हेडर |  Message de bas de page |  Fußzeilen-Link
+content_frontPage_footerLink_label|Footer Link |  পাদদেশ লিঙ্ক |  पाद संदेश |  Lien de bas de page |  Facebook-Link
+content_frontPage_facebookLink_label|Facebook Link |  ফেসবুক লিঙ্ক |  पाद लिंक |  Lien Facebook |  Github-Link
+content_frontPage_githubLink_label|Github Link |  গিথুব লিঙ্ক |  फेसबुक लिंक |  Lien Github |  Front Page List
+content_frontPage_twitterLink_label|Twitter Link |  Front Page List |  जीथब लिंक। Front Page List |  Front Page List | Front Page Form
+content_frontPage_linkedInLink_label|Linked In Link | Front Page Form | Front Page Form | Front Page Form | Front Page Report List
+content_frontPage_features_label|Features | Front Page Report List | Front Page Report List | Front Page Report List | Title
+content_frontPage_characteristics_label|Characteristics | Title | Title | Title | Heading
+content_frontPage_projects_label|Projects | Heading | Heading | Heading | Headline
+content_frontPage_pricingPlan_label|Pricing Plan | Headline | Headline | Headline | Description
+content_frontPage_team_label|Team | Description | Description | Description | Special Link
+

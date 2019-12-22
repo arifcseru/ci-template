@@ -97,7 +97,9 @@ $route['projects/create']['post'] = 'projects/create';
 $route['pricingPlan/create']['post'] = 'pricingPlan/create';
 $route['team/create']['post'] = 'team/create';
 $route['frontPage/create']['post'] = 'frontPage/create';
+$route['employeeSeparation/create']['post'] = 'employeeSeparation/create';
 // entityAjaxRequest
+
 
 
 
