@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/providendFund/providendFundNavigations.js
 function loadProvidendFundListUI() {
 
-	var url =  baseHref+"providendFund/list";
+	var url =  baseHref+"providendFund/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

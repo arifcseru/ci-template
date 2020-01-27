@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/companyBalance/companyBalanceNavigations.js
 function loadCompanyBalanceListUI() {
 
-	var url =  baseHref+"companyBalance/list";
+	var url =  baseHref+"companyBalance/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

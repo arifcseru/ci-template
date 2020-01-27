@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/user/userNavigations.js
 function loadUserListUI() {
 
-	var url =  baseHref+"user/list";
+	var url =  baseHref+"user/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

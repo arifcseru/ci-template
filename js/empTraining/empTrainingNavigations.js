@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/empTraining/empTrainingNavigations.js
 function loadEmpTrainingListUI() {
 
-	var url =  baseHref+"empTraining/list";
+	var url =  baseHref+"empTraining/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

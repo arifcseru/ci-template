@@ -8,9 +8,9 @@
 	<title><?php
 			if (!empty($frontPage)) {
 				echo $frontPage->title;
-				?>
+			?>
 		<?php
-		} ?></title>
+			} ?></title>
 	<meta name="description" content="Material design landing page template built by TemplateFlip.com" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="material_landing_theme/css/bootstrap.min.css" rel="stylesheet">
@@ -25,16 +25,16 @@
 			<div class="container"><a class="navbar-brand" href="#"><strong><?php
 																			if (!empty($frontPage)) {
 																				echo $frontPage->heading;
-																				?>
+																			?>
 						<?php
-						} ?></strong></a>
+																			} ?></strong></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarContent">
 					<ul class="navbar-nav ml-auto">
 						<?php
 						if (!empty($publicMenuList)) {
 							foreach ($publicMenuList as $record) {
-								?>
+						?>
 								<li class="nav-item"><a class="nav-link active" href="<?php echo $record->menuLinkUrl; ?>"><?php echo $record->menuText; ?></a></li>
 
 						<?php }
@@ -57,7 +57,7 @@
 										<?php
 										if (!empty($frontPage)) {
 											echo $frontPage->headline;
-											?>
+										?>
 										<?php
 										} ?>
 									</h1>
@@ -65,7 +65,7 @@
 										<?php
 										if (!empty($frontPage)) {
 											echo $frontPage->description;
-											?>
+										?>
 										<?php
 										} ?>
 									</div>
@@ -73,19 +73,19 @@
 								<div class="wow fadeInLeft" data-wow-delay="0.3s"><a class="btn btn-white dark-grey-text font-bold ml-0" href="<?php
 																																				if (!empty($frontPage)) {
 																																					echo $frontPage->specialLink;
-																																					?>
+																																				?>
 										<?php
-										} ?>" target="_blank"><i class="fa fa-play mr-1"></i> View Demo</a><a class="btn btn-outline-white" href="<?php
+																																				} ?>" target="_blank"><i class="fa fa-play mr-1"></i> View Demo</a><a class="btn btn-outline-white" href="<?php
 																																					if (!empty($frontPage)) {
 																																						echo $frontPage->detailsLink;
-																																						?>
+																																					?>
 										<?php
-										} ?>"><?php
+																																					} ?>"><?php
 												if (!empty($frontPage)) {
 													echo $frontPage->detailsLinkText;
-													?>
+												?>
 										<?php
-										} ?></a></div>
+												} ?></a></div>
 							</div>
 						</div>
 					</div>
@@ -96,10 +96,10 @@
 	<div id="content">
 		<?php
 		if (!empty($featuress)) {
-			?>
+		?>
 			<section class="row no-gutters" id="features">
 				<?php foreach ($featuress as $record) {
-						?>
+				?>
 					<div class="col-lg-3 col-md-6 col-sm-12 deep-purple lighten-1 text-white">
 						<div class="p-5 text-center wow zoomIn" data-wow-delay=".1s"><i class="fa <?php echo $record->icon; ?> fa-2x"></i>
 							<div class="h5 mt-3"><?php echo $record->title; ?></div>
@@ -113,7 +113,7 @@
 
 		<?php
 		if (!empty($characteristicss)) {
-			?>
+		?>
 			<section class="text-center py-5 grey lighten-4" id="about">
 				<div class="container">
 					<div class="wow fadeIn">
@@ -124,7 +124,7 @@
 					</div>
 					<div class="row">
 						<?php foreach ($characteristicss as $record) {
-								?>
+						?>
 							<div class="col-md-4 mb-r wow fadeInUp" data-wow-delay=".3s"><i class="fa fa-dashboard fa-3x orange-text"></i>
 								<h3 class="h4 mt-3"><?php echo $record->title; ?></h3>
 								<p class="mt-3 blue-grey-text">
@@ -140,7 +140,7 @@
 
 		<?php
 		if (!empty($projectss)) {
-			?>
+		?>
 			<section class="py-5" id="projects">
 				<div class="container">
 					<div class="wow fadeIn">
@@ -151,7 +151,7 @@
 						</p>
 					</div>
 					<?php foreach ($projectss as $record) {
-							?>
+					?>
 						<div class="row pt-5 wow fadeInRight" data-wow-delay=".3s">
 							<div class="col-lg-6 col-xl-7 mb-3">
 								<div class="row mb-3">
@@ -197,144 +197,144 @@
 
 		<?php
 		if (!empty($pricingPlans)) {
-			?>
-		<section class="text-center py-5 indigo darken-1 text-white" id="pricing">
-			<div class="container">
-				<div class="wow fadeIn">
-					<h2 class="h1 pt-5 pb-3">Our pricing plans</h2>
-					<p class="px-5 mb-5 pb-3 lead">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
-						veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
-					</p>
+		?>
+			<section class="text-center py-5 indigo darken-1 text-white" id="pricing">
+				<div class="container">
+					<div class="wow fadeIn">
+						<h2 class="h1 pt-5 pb-3">Our pricing plans</h2>
+						<p class="px-5 mb-5 pb-3 lead">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi,
+							veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
+						</p>
+					</div>
+					<div class="row wow zoomIn">
+						<div class="col-lg-4 col-md-12 mb-r">
+							<div class="card card-image">
+								<div class="text-white text-center pricing-card d-flex align-items-center rgba-stylish-strong py-3 px-3 rounded">
+									<div class="card-body">
+										<div class="h5">Individual</div>
+										<div class="py-5"><sup class="display-4">$</sup><span class="display-1">9</span><span class="display-4">/m</span></div>
+										<ul class="list-unstyled">
+											<li>
+												<p><strong>1</strong> person</p>
+											</li>
+											<li>
+												<p><strong>10</strong> projects</p>
+											</li>
+											<li>
+												<p><strong>100</strong> features</p>
+											</li>
+											<li>
+												<p><strong>20GB</strong> storage</p>
+											</li>
+										</ul><a class="btn btn-outline-white mt-5"> Buy now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 mb-r">
+							<div class="card card-image">
+								<div class="text-white text-center pricing-card d-flex align-items-center rgba-teal-strong py-3 px-3 rounded">
+									<div class="card-body">
+										<div class="h5">Startup</div>
+										<div class="py-5"><sup class="display-4">$</sup><span class="display-1">29</span><span class="display-4">/m</span></div>
+										<ul class="list-unstyled">
+											<li>
+												<p><strong>10</strong> person</p>
+											</li>
+											<li>
+												<p><strong>100</strong> projects</p>
+											</li>
+											<li>
+												<p><strong>200</strong> features</p>
+											</li>
+											<li>
+												<p><strong>100GB</strong> storage</p>
+											</li>
+										</ul><a class="btn btn-outline-white mt-5"> Buy now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 mb-r">
+							<div class="card card-image">
+								<div class="text-white text-center pricing-card d-flex align-items-center rgba-red-strong py-3 px-3 rounded">
+									<div class="card-body">
+										<div class="h5">Enterprise</div>
+										<div class="py-5"><sup class="display-4">$</sup><span class="display-1">99</span><span class="display-4">/m</span></div>
+										<ul class="list-unstyled">
+											<li>
+												<p><strong>10+</strong> person</p>
+											</li>
+											<li>
+												<p><strong>Unlimited</strong> projects</p>
+											</li>
+											<li>
+												<p><strong>Unlimited</strong> features</p>
+											</li>
+											<li>
+												<p><strong>1TB</strong> storage</p>
+											</li>
+										</ul><a class="btn btn-outline-white mt-5"> Buy now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="row wow zoomIn">
-					<div class="col-lg-4 col-md-12 mb-r">
-						<div class="card card-image">
-							<div class="text-white text-center pricing-card d-flex align-items-center rgba-stylish-strong py-3 px-3 rounded">
-								<div class="card-body">
-									<div class="h5">Individual</div>
-									<div class="py-5"><sup class="display-4">$</sup><span class="display-1">9</span><span class="display-4">/m</span></div>
-									<ul class="list-unstyled">
-										<li>
-											<p><strong>1</strong> person</p>
-										</li>
-										<li>
-											<p><strong>10</strong> projects</p>
-										</li>
-										<li>
-											<p><strong>100</strong> features</p>
-										</li>
-										<li>
-											<p><strong>20GB</strong> storage</p>
-										</li>
-									</ul><a class="btn btn-outline-white mt-5"> Buy now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 mb-r">
-						<div class="card card-image">
-							<div class="text-white text-center pricing-card d-flex align-items-center rgba-teal-strong py-3 px-3 rounded">
-								<div class="card-body">
-									<div class="h5">Startup</div>
-									<div class="py-5"><sup class="display-4">$</sup><span class="display-1">29</span><span class="display-4">/m</span></div>
-									<ul class="list-unstyled">
-										<li>
-											<p><strong>10</strong> person</p>
-										</li>
-										<li>
-											<p><strong>100</strong> projects</p>
-										</li>
-										<li>
-											<p><strong>200</strong> features</p>
-										</li>
-										<li>
-											<p><strong>100GB</strong> storage</p>
-										</li>
-									</ul><a class="btn btn-outline-white mt-5"> Buy now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 mb-r">
-						<div class="card card-image">
-							<div class="text-white text-center pricing-card d-flex align-items-center rgba-red-strong py-3 px-3 rounded">
-								<div class="card-body">
-									<div class="h5">Enterprise</div>
-									<div class="py-5"><sup class="display-4">$</sup><span class="display-1">99</span><span class="display-4">/m</span></div>
-									<ul class="list-unstyled">
-										<li>
-											<p><strong>10+</strong> person</p>
-										</li>
-										<li>
-											<p><strong>Unlimited</strong> projects</p>
-										</li>
-										<li>
-											<p><strong>Unlimited</strong> features</p>
-										</li>
-										<li>
-											<p><strong>1TB</strong> storage</p>
-										</li>
-									</ul><a class="btn btn-outline-white mt-5"> Buy now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 		<?php } ?>
 
 		<?php
 		if (!empty($teams)) {
-			?>
-		<section class="py-5" id="team">
-			<div class="container">
-				<div class="wow fadeIn">
-					<h2 class="h1 pt-5 pb-3 text-center">Our team members</h2>
-					<p class="px-5 mb-5 pb-3 lead text-center blue-grey-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate
-						esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
-					</p>
+		?>
+			<section class="py-5" id="team">
+				<div class="container">
+					<div class="wow fadeIn">
+						<h2 class="h1 pt-5 pb-3 text-center">Our team members</h2>
+						<p class="px-5 mb-5 pb-3 lead text-center blue-grey-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate
+							esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.
+						</p>
+					</div>
+					<div class="row mb-lg-4 center-on-small-only">
+						<div class="col-lg-6 col-md-12 mb-r wow fadeInLeft" data-wow-delay=".3s">
+							<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/woman-1.jpg" alt="team member" /></div>
+							<div class="col-md-6 float-right">
+								<div class="h4">Nicole West</div>
+								<h6 class="font-bold blue-grey-text mb-4">Lead Designer</h6>
+								<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@nicolewest</span></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 mb-r wow fadeInRight" data-wow-delay=".3s">
+							<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/woman-2.jpg" alt="team member" /></div>
+							<div class="col-md-6 float-right">
+								<div class="h4">Hannah Cruz</div>
+								<h6 class="font-bold blue-grey-text mb-4">Photographer</h6>
+								<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@hannahcruz</span></a>
+							</div>
+						</div>
+					</div>
+					<div class="row center-on-small-only">
+						<div class="col-lg-6 col-md-12 mb-r wow fadeInLeft" data-wow-delay=".3s">
+							<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/man-1.jpg" alt="team member" /></div>
+							<div class="col-md-6 float-right">
+								<div class="h4">Mark Hall</div>
+								<h6 class="font-bold blue-grey-text mb-4">Web Developer</h6>
+								<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@markhall</span></a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 mb-r wow fadeInRight" data-wow-delay=".3s">
+							<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/man-2.jpg" alt="team member" /></div>
+							<div class="col-md-6 float-right">
+								<div class="h4">Vincent Harris</div>
+								<h6 class="font-bold blue-grey-text mb-4">Web Developer</h6>
+								<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@vincentharris</span></a>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="row mb-lg-4 center-on-small-only">
-					<div class="col-lg-6 col-md-12 mb-r wow fadeInLeft" data-wow-delay=".3s">
-						<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/woman-1.jpg" alt="team member" /></div>
-						<div class="col-md-6 float-right">
-							<div class="h4">Nicole West</div>
-							<h6 class="font-bold blue-grey-text mb-4">Lead Designer</h6>
-							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@nicolewest</span></a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12 mb-r wow fadeInRight" data-wow-delay=".3s">
-						<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/woman-2.jpg" alt="team member" /></div>
-						<div class="col-md-6 float-right">
-							<div class="h4">Hannah Cruz</div>
-							<h6 class="font-bold blue-grey-text mb-4">Photographer</h6>
-							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@hannahcruz</span></a>
-						</div>
-					</div>
-				</div>
-				<div class="row center-on-small-only">
-					<div class="col-lg-6 col-md-12 mb-r wow fadeInLeft" data-wow-delay=".3s">
-						<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/man-1.jpg" alt="team member" /></div>
-						<div class="col-md-6 float-right">
-							<div class="h4">Mark Hall</div>
-							<h6 class="font-bold blue-grey-text mb-4">Web Developer</h6>
-							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@markhall</span></a>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-12 mb-r wow fadeInRight" data-wow-delay=".3s">
-						<div class="col-md-6 float-left"><img class="material_landing_theme/img-fluid rounded z-depth-1 mb-3" src="material_landing_theme/img/man-2.jpg" alt="team member" /></div>
-						<div class="col-md-6 float-right">
-							<div class="h4">Vincent Harris</div>
-							<h6 class="font-bold blue-grey-text mb-4">Web Developer</h6>
-							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur.</p><a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i><span class="ml-1">@vincentharris</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+			</section>
 		<?php } ?>
 
 		<section id="contact" style="background-image:url('img/panorama-3094696_1920.jpg');">

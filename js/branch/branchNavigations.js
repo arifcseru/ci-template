@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/branch/branchNavigations.js
 function loadBranchListUI() {
 
-	var url =  baseHref+"branch/list";
+	var url =  baseHref+"branch/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

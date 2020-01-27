@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/publicMenu/publicMenuNavigations.js
 function loadPublicMenuListUI() {
 
-	var url =  baseHref+"publicMenu/list";
+	var url =  baseHref+"publicMenu/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/pfLoan/pfLoanNavigations.js
 function loadPfLoanListUI() {
 
-	var url =  baseHref+"pfLoan/list";
+	var url =  baseHref+"pfLoan/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/expepnseType/expepnseTypeNavigations.js
 function loadExpepnseTypeListUI() {
 
-	var url =  baseHref+"expepnseType/list";
+	var url =  baseHref+"expepnseType/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

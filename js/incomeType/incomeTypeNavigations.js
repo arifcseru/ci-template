@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/incomeType/incomeTypeNavigations.js
 function loadIncomeTypeListUI() {
 
-	var url =  baseHref+"incomeType/list";
+	var url =  baseHref+"incomeType/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

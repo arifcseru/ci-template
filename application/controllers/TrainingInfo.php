@@ -61,7 +61,7 @@ class TrainingInfo extends BaseController
 			}
 		}
 	}
-	public function list()
+	public function listData()
 	{
 		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
 			$this->loadThis();

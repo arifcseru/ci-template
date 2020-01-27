@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/trainingInfo/trainingInfoNavigations.js
 function loadTrainingInfoListUI() {
 
-	var url =  baseHref+"trainingInfo/list";
+	var url =  baseHref+"trainingInfo/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

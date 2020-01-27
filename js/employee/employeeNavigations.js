@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/employee/employeeNavigations.js
 function loadEmployeeListUI() {
 
-	var url =  baseHref+"employee/list";
+	var url =  baseHref+"employee/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

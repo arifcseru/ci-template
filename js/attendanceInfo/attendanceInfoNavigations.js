@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/attendanceInfo/attendanceInfoNavigations.js
 function loadAttendanceInfoListUI() {
 
-	var url =  baseHref+"attendanceInfo/list";
+	var url =  baseHref+"attendanceInfo/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

@@ -87,8 +87,7 @@ function saveUserPreference() {
         async : false,
         data : userPreference,
         success : function(data) {
-            //$('#userPreferenceContainer').html(data);
-            loadUserPreferenceFormUIToEdit(1);
+        	$('#userPreferenceContainer').html(data);
         },
         error : function(err) {
             console.log(err);

@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/jobApplication/jobApplicationNavigations.js
 function loadJobApplicationListUI() {
 
-	var url =  baseHref+"jobApplication/list";
+	var url =  baseHref+"jobApplication/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

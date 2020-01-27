@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/expense/expenseNavigations.js
 function loadExpenseListUI() {
 
-	var url =  baseHref+"expense/list";
+	var url =  baseHref+"expense/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

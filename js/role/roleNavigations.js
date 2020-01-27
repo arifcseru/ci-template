@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/role/roleNavigations.js
 function loadRoleListUI() {
 
-	var url =  baseHref+"role/list";
+	var url =  baseHref+"role/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

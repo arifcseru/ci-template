@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/userPreference/userPreferenceNavigations.js
 function loadUserPreferenceListUI() {
 
-	var url =  baseHref+"userPreference/list";
+	var url =  baseHref+"userPreference/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();
@@ -44,6 +44,5 @@ function loadUserPreferenceFormUIToEdit(id) {
 
 $(document).ready(function() {
 	//loadUserPreferenceListUI();
-	loadUserPreferenceFormUIToEdit(1);
 });
 

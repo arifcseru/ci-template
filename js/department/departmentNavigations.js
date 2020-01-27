@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/department/departmentNavigations.js
 function loadDepartmentListUI() {
 
-	var url =  baseHref+"department/list";
+	var url =  baseHref+"department/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

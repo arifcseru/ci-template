@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/traineeCourses/traineeCoursesNavigations.js
 function loadTraineeCoursesListUI() {
 
-	var url =  baseHref+"traineeCourses/list";
+	var url =  baseHref+"traineeCourses/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

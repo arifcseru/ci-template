@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/frontPage/frontPageNavigations.js
 function loadFrontPageListUI() {
 
-	var url =  baseHref+"frontPage/list";
+	var url =  baseHref+"frontPage/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

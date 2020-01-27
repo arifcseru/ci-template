@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/jobPosting/jobPostingNavigations.js
 function loadJobPostingListUI() {
 
-	var url =  baseHref+"jobPosting/list";
+	var url =  baseHref+"jobPosting/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

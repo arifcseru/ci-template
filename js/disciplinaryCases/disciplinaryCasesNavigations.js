@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/disciplinaryCases/disciplinaryCasesNavigations.js
 function loadDisciplinaryCasesListUI() {
 
-	var url =  baseHref+"disciplinaryCases/list";
+	var url =  baseHref+"disciplinaryCases/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

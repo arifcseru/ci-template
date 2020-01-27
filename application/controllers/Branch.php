@@ -55,13 +55,13 @@ class Branch extends BaseController
 				$this->global['pageTitle'] = $userPreference->applicationTitle;
 				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
 				$this->global['bodyClass'] = $userPreference->metaTags;
-				
+
 				$this->global['pageName'] = 'branch';
 				$this->loadMaterialViews("branch/index", $this->global, $data, NULL);
 			}
 		}
 	}
-	public function list()
+	public function listData()
 	{
 		if ($this->isAdmin() == TRUE && $this->isApproverAdmin() == TRUE) {
 			$this->loadThis();
@@ -89,7 +89,8 @@ class Branch extends BaseController
 				$data['role'] = $this->role;
 				$data['branchList'] = $this->BranchModel->getAll();
 				$this->global['createdByUserName'] = $this->name;
-				$this->global['pageTitle'] = $userPreference->applicationTitle;$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->global['pageTitle'] = $userPreference->applicationTitle;
+				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
 				$this->global['pageName'] = 'branch';
 				$this->loadForm("branch/branchList", $this->global, $data, NULL);
 			}
@@ -133,8 +134,6 @@ class Branch extends BaseController
 
 				$data['createdByUserName'] = $this->name;
 				$data['updatedByUserName'] = $this->name;
-
-				
 			} else {
 				$branch = new BranchModel();
 				$branch->createdDate  = date('Y-m-d H:i:s');
@@ -142,11 +141,11 @@ class Branch extends BaseController
 
 				//$branch->field1 = "";
 				$branch->companyProfileId = "";
-$branch->name = "";
-$branch->address = "";
-$branch->establishedDate = "";
+				$branch->name = "";
+				$branch->address = "";
+				$branch->establishedDate = "";
 
-				
+
 
 				$branch->createdBy = $this->vendorId;
 				$branch->updatedBy = $this->vendorId;
@@ -163,7 +162,7 @@ $branch->establishedDate = "";
 				$this->global['bodyClass'] = '';
 				$this->global['pageTitle'] = 'User Preference Needed!!!';
 				$this->global['pageName'] = 'branch';
-				
+
 				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
 			} else {
 				$this->global['createdByUserName'] = $this->name;
@@ -171,7 +170,7 @@ $branch->establishedDate = "";
 				$data['role'] = $this->role;
 				//$this->global['pageTitle'] = $userPreference->applicationTitle;
 				//$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
-				
+
 				$this->loadForm("branch/branchForm", $this->global, $data, NULL);
 			}
 		}
@@ -213,17 +212,17 @@ $branch->establishedDate = "";
 				}
 				//$branch = $this->read($id);
 				$data['branch'] = $branch;
-				
+
 				$data['createdByUserName'] = $this->name;
 				$data['updatedByUserName'] = $this->name;
 			} else {
 				$branch = new BranchModel();
 				// $branch->field1 = "";
-				
+
 				$branch->companyProfileId = "";
-$branch->name = "";
-$branch->address = "";
-$branch->establishedDate = "";
+				$branch->name = "";
+				$branch->address = "";
+				$branch->establishedDate = "";
 
 
 				$data['branch'] = $branch;
@@ -238,7 +237,8 @@ $branch->establishedDate = "";
 				$this->loadMaterialViews("common/userPreferenceNotFound", $this->global, $data, NULL);
 			} else {
 				$this->global['createdByUserName'] = $this->name;
-				$this->global['pageTitle'] = $userPreference->applicationTitle;$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
+				$this->global['pageTitle'] = $userPreference->applicationTitle;
+				$this->global['activeCompanyId'] = $userPreference->activeCompanyId;
 				$this->loadForm("branch/branchFormView", $this->global, $data, NULL);
 			}
 		}
@@ -267,15 +267,11 @@ $branch->establishedDate = "";
 				$branch['updatedBy'] = $this->vendorId;
 
 				$id = $this->BranchModel->update($branch);
-				
-
 			} else {
 				$branch['createdBy'] = $this->vendorId;
 				$branch['updatedBy'] = $this->vendorId;
 
 				$id = $this->BranchModel->create($branch);
-				
-
 			}
 		} catch (Exception $e) {
 			echo 'error to create data';
@@ -320,7 +316,6 @@ $branch->establishedDate = "";
 				if ($branch != null) {
 					$branch->isApproved = "1";
 					$id = $this->BranchModel->approve($branch);
-					
 				} else {
 					echo "not Found!";
 				}
@@ -366,7 +361,7 @@ $branch->establishedDate = "";
 		} catch (Exception $e) {
 			echo 'error to fetch data';
 		}
-		
+
 		return $branch;
 	}
 	public function report($id)
@@ -401,7 +396,7 @@ $branch->establishedDate = "";
 
 				//$branch = $this->read($id);
 				$data['branch'] = $branch;
-				
+
 
 				$this->loadReport("branch/branchReport", $this->global, $data, NULL);
 				$html = $this->output->get_output();
@@ -410,17 +405,17 @@ $branch->establishedDate = "";
 				$this->dompdf->loadHtml($html);
 				$this->dompdf->setPaper('A4', 'landscape');
 				$this->dompdf->render();
-				$this->dompdf->stream("Branch_".$id."_report.pdf", array("Attachment" => 0));
+				$this->dompdf->stream("Branch_" . $id . "_report.pdf", array("Attachment" => 0));
 			}
 		}
 	}
 
-	public function get($start,$limit)
+	public function get($start, $limit)
 	{
 		$this->load->model('BranchModel');
 		$this->load->helper('url');
 		try {
-			$branchList = $this->BranchModel->getPaginated($start,$limit);
+			$branchList = $this->BranchModel->getPaginated($start, $limit);
 			header('Content-type: application/json');
 			echo json_encode($branchList);
 		} catch (Exception $e) {
@@ -486,7 +481,7 @@ $branch->establishedDate = "";
 				$branchs = $this->BranchModel->findOne($id);
 				$this->BranchModel->delete($id);
 				//$this->EntityDetailsModel->deleteBy("branchId",$id);
-				
+
 
 				$branchList = array();
 				$limit = 10;

@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/course/courseNavigations.js
 function loadCourseListUI() {
 
-	var url =  baseHref+"course/list";
+	var url =  baseHref+"course/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

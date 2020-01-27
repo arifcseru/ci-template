@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/employeeSalary/employeeSalaryNavigations.js
 function loadEmployeeSalaryListUI() {
 
-	var url =  baseHref+"employeeSalary/list";
+	var url =  baseHref+"employeeSalary/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

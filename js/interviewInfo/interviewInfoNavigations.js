@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/interviewInfo/interviewInfoNavigations.js
 function loadInterviewInfoListUI() {
 
-	var url =  baseHref+"interviewInfo/list";
+	var url =  baseHref+"interviewInfo/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

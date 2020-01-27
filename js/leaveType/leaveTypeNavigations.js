@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/leaveType/leaveTypeNavigations.js
 function loadLeaveTypeListUI() {
 
-	var url =  baseHref+"leaveType/list";
+	var url =  baseHref+"leaveType/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

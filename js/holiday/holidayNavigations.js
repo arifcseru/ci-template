@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/holiday/holidayNavigations.js
 function loadHolidayListUI() {
 
-	var url =  baseHref+"holiday/list";
+	var url =  baseHref+"holiday/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

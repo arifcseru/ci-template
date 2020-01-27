@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/leaveRequest/leaveRequestNavigations.js
 function loadLeaveRequestListUI() {
 
-	var url =  baseHref+"leaveRequest/list";
+	var url =  baseHref+"leaveRequest/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();

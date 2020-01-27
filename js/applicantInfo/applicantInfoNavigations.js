@@ -9,7 +9,7 @@
 // /aider/src/main/resources/static/js/applicantInfo/applicantInfoNavigations.js
 function loadApplicantInfoListUI() {
 
-	var url =  baseHref+"applicantInfo/list";
+	var url =  baseHref+"applicantInfo/listData";
 	
 	/*var fromDate = $("#fromDate").val();
 	var toDate = $("#toDate").val();
